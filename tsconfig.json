@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"]
+    },
+    "target": "es5",
+    "module": "es2015",
+    "outDir": "./lib",
+    "moduleResolution": "node",
+    "lib": ["es2019", "dom"],
+    "jsx": "react",
+    "rootDirs": ["src"],
+    "types": ["react", "node", "jest"],
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmitOnError": true,
+    "removeComments": true,
+    "importHelpers": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"]
+}

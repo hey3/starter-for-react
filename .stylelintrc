@@ -1,0 +1,15 @@
+{
+  "processors": ["stylelint-processor-styled-components"],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-styled-components",
+    "stylelint-config-prettier"
+  ],
+  "rules": {
+    "no-descending-specificity": null,
+    "value-keyword-case": ["lower", {
+      "ignoreKeywords": ["dummyValue"]
+    }]
+  },
+  "syntax": "scss"
+}
