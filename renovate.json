@@ -1,0 +1,60 @@
+{
+  "extends": [
+    ":timezone(Asia/Tokyo)",
+    "group:monorepos",
+    "packages:stylelint",
+    ":widenPeerDependencies",
+    ":label(renovate)"
+  ],
+  "npm": {
+    "extends": [":noUnscheduledUpdates", ":unpublishSafe", "helpers:disableTypesNodeMajor"],
+    "schedule": ["before 10am on Monday"],
+    "rangeStrategy": "bump",
+    "semanticCommitType": "chore",
+    "packageRules": [
+      {
+        "separateMinorPatch": true,
+        "depTypeList": ["devDependencies"],
+        "updateTypes": ["minor", "patch"],
+        "automerge": true
+      },
+      {
+        "groupName": "Babel",
+        "packageNames": ["core-js"],
+        "packagePatterns": ["^@babel/"]
+      },
+      {
+        "groupName": "ESLint and Prettier",
+        "packageNames": ["eslint", "prettier"],
+        "packagePatterns": ["^eslint-", "^prettier-", "^@typescript-eslint/", "^stylelint"]
+      },
+      {
+        "groupName": "Loader",
+        "packageNames": ["babel-loader", "file-loader", "ts-loader"]
+      },
+      {
+        "groupName": "Test",
+        "packageNames": ["jest", "ts-jest", "@types/jest"]
+      },
+      {
+        "groupName": "Typescript",
+        "packageNames": ["typescript"],
+        "packagePatterns": ["^@typescript-"]
+      },
+      {
+        "groupName": "React",
+        "packageNames": ["react"],
+        "packagePatterns": ["^react-", "^@types/react"]
+      },
+      {
+        "groupName": "Style",
+        "packageNames": ["styled-components", "@types/styled-components"]
+      },
+      {
+        "groupName": "Webpack",
+        "packageNames": ["dotenv-webpack", "html-webpack-plugin"],
+        "packagePatterns": ["^webpack"]
+      }
+    ]
+  }
+}
