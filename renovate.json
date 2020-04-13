@@ -1,16 +1,15 @@
 {
-  "extends": [
-    ":timezone(Asia/Tokyo)",
-    "group:monorepos",
-    "packages:stylelint",
-    ":widenPeerDependencies",
-    ":label(renovate)"
-  ],
+  "extends": ["config:base", ":timezone(Asia/Tokyo)", "group:monorepos", ":label(renovate)"],
   "npm": {
-    "extends": [":noUnscheduledUpdates", ":unpublishSafe", "helpers:disableTypesNodeMajor"],
+    "extends": [":noUnscheduledUpdates"],
     "schedule": ["before 10am on Monday"],
     "rangeStrategy": "bump",
     "semanticCommitType": "chore",
+    "lockFileMaintenance": {
+      "enabled": true,
+      "schedule": ["every weekend"],
+      "automerge": true
+    },
     "packageRules": [
       {
         "separateMinorPatch": true,
@@ -39,12 +38,14 @@
       {
         "groupName": "Typescript",
         "packageNames": ["typescript"],
-        "packagePatterns": ["^@typescript-"]
+        "packagePatterns": ["^@typescript-"],
+        "automerge": false
       },
       {
         "groupName": "React",
         "packageNames": ["react"],
-        "packagePatterns": ["^react-", "^@types/react"]
+        "packagePatterns": ["^react-", "^@types/react"],
+        "automerge": false
       },
       {
         "groupName": "Style",
