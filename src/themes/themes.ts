@@ -3,13 +3,13 @@ import { SizeTheme, baseSize } from './sizeTheme'
 import { FrameTheme, baseFrame } from './frameTheme'
 
 export type ColorMode = 'light' | 'dark'
-type Themes = {
+export type BaseThemes = {
   color: ColorTheme
   size: SizeTheme
   frame: FrameTheme
 }
 
-const lightTheme: Themes = {
+const lightTheme: BaseThemes = {
   color: baseLight,
   size: baseSize,
   frame: {
@@ -21,7 +21,7 @@ const lightTheme: Themes = {
   },
 }
 
-const darkTheme: Themes = {
+const darkTheme: BaseThemes = {
   color: baseDark,
   size: baseSize,
   frame: {
@@ -33,7 +33,7 @@ const darkTheme: Themes = {
   },
 }
 
-export const getTheme = (colorMode: ColorMode): Themes => {
+export const getTheme = (colorMode: ColorMode): BaseThemes => {
   switch (colorMode) {
     case 'light':
       return lightTheme
@@ -43,5 +43,5 @@ export const getTheme = (colorMode: ColorMode): Themes => {
 }
 
 declare module 'styled-components' {
-  interface DefaultTheme extends Themes {}
+  interface DefaultTheme extends BaseThemes {}
 }
