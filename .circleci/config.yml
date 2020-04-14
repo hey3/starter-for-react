@@ -6,19 +6,19 @@ executors:
       - image: circleci/node:10
 
 commands:
-  prepare-dependencies:
+  setup-dependencies:
     steps:
       - restore_cache:
-        keys:
-          - v1-dependencies-{{ checksum "yarn.lock" }}
-          - v1-dependencies-
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
       - run:
-        name: install-packages
-        command: yarn install
+          name: install-packages
+          command: yarn install
       - save_cache:
-        key: v1-dependencies-{{ checksum "yarn.lock" }}
-        paths:
-          - ./node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
   test:
     steps:
       - run: yarn lint
@@ -30,7 +30,7 @@ jobs:
       name: node
     steps:
       - checkout
-      - prepare-dependencies
+      - setup-dependencies
       - test
 
 workflows:
