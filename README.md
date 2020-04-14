@@ -1,5 +1,6 @@
 ## Starter-for-react
 
+[![CircleCI](https://circleci.com/gh/hey3/starter-for-react/tree/master.svg?style=svg)](https://circleci.com/gh/hey3/starter-for-react/tree/master)
 [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
 
 ## How to use
