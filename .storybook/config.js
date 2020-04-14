@@ -15,11 +15,9 @@ addParameters({
   options: {
     theme: create({
       base: 'light',
-      brandTitle: 'hey3 web-base storybook',
-      brandUrl: 'https://github.com/hey3/web-base',
+      brandTitle: 'hey3 starter-for-react storybook',
+      brandUrl: 'https://github.com/hey3/starter-for-react',
     }),
-    isFullscreen: false,
-    isToolshown: true,
   },
 })
 addParameters({ viewport: { viewports: INITIAL_VIEWPORTS } })
