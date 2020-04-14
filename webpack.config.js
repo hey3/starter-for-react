@@ -44,6 +44,7 @@ module.exports = {
     alias: {
       '@components': path.resolve(__dirname, './src/components'),
       '@pages': path.resolve(__dirname, './src/pages'),
+      '@images': path.resolve(__dirname, './static/images'),
     },
     extensions: ['.js', '.ts', '.tsx', '.gif', 'jpg', 'png'],
   },

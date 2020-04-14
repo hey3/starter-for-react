@@ -33,6 +33,8 @@ bower_components
 # Compiled binary addons
 dist
 build/Release
+storybook-static
+lib
 
 # Dependency directories
 node_modules/
