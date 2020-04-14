@@ -21,10 +21,14 @@ commands:
             - ./node_modules
   test:
     steps:
-      - run: yarn test
+      - run:
+          name: unit test by jest
+          command: yarn test
   lint:
     steps:
-      - run: yarn lint
+      - run:
+          name: eslint, stylelint and type check
+          command: yarn lint
 
 jobs:
   test-job:
