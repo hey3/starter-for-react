@@ -6,7 +6,7 @@ export type ColorTheme = {
   TEXT_SUB: string
   TEXT_DISABLE: string
   TEXT_LINK: string
-  WORN: string
+  WARN: string
   DANGER: string
   PRIMARY: string
   SECONDARY: string
@@ -16,14 +16,14 @@ export const baseLight: ColorTheme = {
   BACKGROUND: '#ffffff',
   BASE: '#efeff4',
   BORDER: '#000000',
-  TEXT_MAIN: '#111215',
-  TEXT_SUB: '#313134',
-  TEXT_DISABLE: '#767D92',
-  TEXT_LINK: '#007bc2',
-  WORN: '#fba22f',
+  TEXT_MAIN: '#1c1c1c',
+  TEXT_SUB: '#737373',
+  TEXT_DISABLE: '#c1c1c1',
+  TEXT_LINK: '#1067ec',
+  WARN: '#ff8800',
   DANGER: '#f54d36',
-  PRIMARY: '#36b5f5',
-  SECONDARY: '#7036f5',
+  PRIMARY: '#143cd1',
+  SECONDARY: '#d15314',
 }
 
 export const baseDark: ColorTheme = {
@@ -31,11 +31,11 @@ export const baseDark: ColorTheme = {
   BASE: '#1b2440',
   BORDER: '#737475',
   TEXT_MAIN: '#ffffff',
-  TEXT_SUB: '#b2b3b6',
-  TEXT_DISABLE: '#3d3d40',
-  TEXT_LINK: '#011e81',
-  WORN: '#fba22f',
-  DANGER: '#f54d36',
-  PRIMARY: '#4bb2f9',
-  SECONDARY: '#2d16a9',
+  TEXT_SUB: '#b9b9bb',
+  TEXT_DISABLE: '#6a696d',
+  TEXT_LINK: '#046fad',
+  WARN: '#ea7d00',
+  DANGER: '#df3406',
+  PRIMARY: '#7098af',
+  SECONDARY: '#af9670',
 }
