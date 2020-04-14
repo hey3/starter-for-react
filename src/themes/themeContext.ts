@@ -1,8 +1,8 @@
 import * as React from 'react'
 
-import { ColorMode } from './themes'
+import { ColorMode } from './index'
 
-interface ThemeContextType {
+type ThemeContextType = {
   colorMode: ColorMode
   setColorMode: () => void
 }
@@ -13,4 +13,3 @@ const defaultContext: ThemeContextType = {
 }
 
 export const ThemeContext = React.createContext<ThemeContextType>(defaultContext)
-export const useTheme = () => React.useContext(ThemeContext)
