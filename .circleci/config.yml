@@ -21,8 +21,10 @@ commands:
             - ./node_modules
   test:
     steps:
-      - run: yarn lint
       - run: yarn test
+  lint:
+    steps:
+      - run: yarn lint
 
 jobs:
   test-job:
@@ -31,6 +33,7 @@ jobs:
     steps:
       - checkout
       - setup-dependencies
+      - lint
       - test
 
 workflows:
