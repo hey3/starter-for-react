@@ -1,0 +1,39 @@
+version: 2.1
+
+executors:
+  node:
+    docker:
+      - image: circleci/node:10
+
+commands:
+  setup-dependencies:
+    steps:
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
+      - run:
+          name: install-packages
+          command: yarn install
+      - save_cache:
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+  test:
+    steps:
+      - run: yarn lint
+      - run: yarn test
+
+jobs:
+  test-job:
+    executor:
+      name: node
+    steps:
+      - checkout
+      - setup-dependencies
+      - test
+
+workflows:
+  build-and-test:
+    jobs:
+      - test-job
