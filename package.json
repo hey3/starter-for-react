@@ -17,7 +17,7 @@
     "build-storybook": "build-storybook",
     "build:dev": "BUILD_MODE='development' REACT_APP_ENV=development webpack",
     "build:local": "BUILD_MODE='development' REACT_APP_ENV=local webpack",
-    "build:prd": "BUILD_MODE='production' REACT_APP_ENV=production webpack",
+    "build:prod": "BUILD_MODE='production' REACT_APP_ENV=production webpack",
     "build:stg": "BUILD_MODE='production' REACT_APP_ENV=staging webpack",
     "fix": "fixpack",
     "format": "prettier --write './src/**/*.{ts,tsx,json,js}'",
@@ -27,7 +27,7 @@
     "lint:tsc": "tsc --noEmit",
     "start:dev": "BUILD_MODE='development' REACT_APP_ENV=development webpack-dev-server --open",
     "start:local": "BUILD_MODE='development' REACT_APP_ENV=local webpack-dev-server --open",
-    "start:prd": "BUILD_MODE='production' REACT_APP_ENV='production' webpack-dev-server --open",
+    "start:prod": "BUILD_MODE='production' REACT_APP_ENV='production' webpack-dev-server --open",
     "start:stg": "BUILD_MODE='production' REACT_APP_ENV='staging' webpack-dev-server --open",
     "storybook": "start-storybook -p 6006",
     "test": "jest --passWithNoTests"
