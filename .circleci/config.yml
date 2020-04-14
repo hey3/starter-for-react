@@ -29,6 +29,33 @@ commands:
       - run:
           name: eslint, stylelint and type check
           command: yarn lint
+  persist-build:
+    steps:
+      - persist_to_workspace:
+          root: .
+          paths:
+            - dist
+  attach-build:
+    steps:
+      - attach_workspace:
+          root: .
+          paths:
+            - dist
+  build-dev:
+    steps:
+      - run:
+          name: build for development
+          command: yarn build:dev
+  build-stg:
+    steps:
+      - run:
+          name: build for staging
+          command: yarn build:stg
+  build-prod:
+    steps:
+      - run:
+          name: build for production
+          command: yarn build:prod
 
 jobs:
   test-job:
@@ -39,8 +66,53 @@ jobs:
       - setup-dependencies
       - lint
       - test
+  build-dev-job:
+    executor:
+      name: node
+    steps:
+      - checkout
+      - setup-dependencies
+      - build-dev
+      - persist-build
+  build-stg-job:
+    executor:
+      name: node
+    steps:
+      - checkout
+      - setup-dependencies
+      - build-stg
+      - persist-build
+  build-prod-job:
+    executor:
+      name: node
+    steps:
+      - checkout
+      - setup-dependencies
+      - build-prod
+      - persist-build
 
 workflows:
-  build-and-test:
+  test-and-build:
     jobs:
       - test-job
+      - build-prod-job:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - test-job
+      - build-dev-job:
+          filters:
+            branches:
+              ignore:
+                - master
+          requires:
+            - test-job
+      - build-stg-job:
+          filters:
+            branches:
+              ignore:
+                - master
+          requires:
+            - test-job
