@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom'
 import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset'
 
+import ThemeProvider from './themes/ThemeProvider'
+
 const GlobalStyle = createGlobalStyle`
   ${reset}
   html {
@@ -11,8 +13,8 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     word-wrap: break-word;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-    background-color: #fff;
+    font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+    background-color: ${(props) => props.theme.color.BACKGROUND};
   }
   a {
     color: inherit;
@@ -21,7 +23,9 @@ const GlobalStyle = createGlobalStyle`
   img {
     vertical-align: middle;
   }
-  input, button, textarea {
+  input,
+  button,
+  textarea {
     margin: 0;
     padding: 0;
     outline: none;
@@ -32,8 +36,9 @@ const GlobalStyle = createGlobalStyle`
 `
 
 ReactDOM.render(
-  <BrowserRouter>
+  <ThemeProvider>
     <GlobalStyle />
-  </BrowserRouter>,
+    <BrowserRouter />
+  </ThemeProvider>,
   document.getElementById('root')
 )
