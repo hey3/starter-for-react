@@ -5,6 +5,8 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import { withA11y } from '@storybook/addon-a11y'
 import { addReadme } from 'storybook-readme'
 
+import ThemeProvider from '../src/themes/ThemeProvider'
+
 const req = require.context('../src/components', true, /.stories.tsx$/)
 
 function loadStories() {
@@ -24,6 +26,10 @@ addParameters({ viewport: { viewports: INITIAL_VIEWPORTS } })
 
 addDecorator(withA11y)
 addDecorator(addReadme)
-addDecorator((Story) => <Story />)
+addDecorator((Story) => (
+  <ThemeProvider>
+    <Story />
+  </ThemeProvider>
+))
 
 configure(loadStories, module)
