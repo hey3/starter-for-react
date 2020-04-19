@@ -7,7 +7,6 @@
     "semanticCommitType": "chore",
     "lockFileMaintenance": {
       "enabled": true,
-      "schedule": ["every weekend"],
       "automerge": true
     },
     "packageRules": [
