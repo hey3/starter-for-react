@@ -46,7 +46,7 @@ module.exports = {
       '@pages': path.resolve(__dirname, './src/pages'),
       '@images': path.resolve(__dirname, './static/images'),
     },
-    extensions: ['.js', '.ts', '.tsx', '.gif', 'jpg', 'png'],
+    extensions: ['.js', '.ts', '.tsx', '.gif', '.jpg', '.png'],
   },
   plugins: [
     new HtmlWebpackPlugin({
