@@ -33,7 +33,7 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
-    "core-js": "3",
+    "core-js": "^3.6.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
