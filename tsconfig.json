@@ -6,31 +6,19 @@
       "@pages/*": ["./src/pages/*"],
       "@images/*": ["./static/images/*"]
     },
-    "target": "es5",
-    "module": "es2015",
-    "outDir": "./lib",
     "moduleResolution": "node",
-    "lib": ["es2019", "dom"],
     "jsx": "react",
-    "rootDirs": ["src"],
-    "types": ["react", "node", "jest"],
-    "typeRoots": ["node_modules/@types", "types"],
     "allowSyntheticDefaultImports": true,
-    "declaration": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
+    "noEmit": true,
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": false,
-    "noImplicitAny": false,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "removeComments": true,
     "skipLibCheck": true,
     "strict": true
-  },
-  "exclude": ["node_modules"],
-  "include": ["src/**/*", "types/**/*"]
+  }
 }
