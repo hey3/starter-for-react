@@ -58,6 +58,7 @@ module.exports = {
       path: `./src/envs/.env.${process.env.REACT_APP_ENV}`,
     }),
   ],
+  devtool: process.env.BUILD_MODE === 'production' ? 'inline-source-map' : false,
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
