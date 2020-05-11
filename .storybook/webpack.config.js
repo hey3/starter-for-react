@@ -13,22 +13,12 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: [
-          {
-            loader: 'babel-loader',
-          },
-        ],
+        loader: 'babel-loader',
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {},
-          },
-        ],
-        exclude: /node_modules/,
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader',
       },
     ],
   },
