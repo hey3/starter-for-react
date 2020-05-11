@@ -21,22 +21,12 @@ module.exports = {
     rules: [
       {
         test: /\.(js|ts|tsx)$/,
-        use: [
-          {
-            loader: 'babel-loader',
-          },
-        ],
+        loader: 'babel-loader',
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {},
-          },
-        ],
-        exclude: /node_modules/,
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader',
       },
     ],
   },
@@ -46,7 +36,7 @@ module.exports = {
       '@pages': path.resolve(__dirname, './src/pages'),
       '@images': path.resolve(__dirname, './static/images'),
     },
-    extensions: ['.js', '.ts', '.tsx', '.gif', '.jpg', '.png'],
+    extensions: ['.js', '.ts', '.tsx', '.png', '.jpg', '.gif', 'svg'],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -58,6 +48,7 @@ module.exports = {
       path: `./src/envs/.env.${process.env.REACT_APP_ENV}`,
     }),
   ],
+  devtool: env === 'production' ? false : 'inline-source-map',
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
