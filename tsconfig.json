@@ -6,6 +6,7 @@
       "@pages/*": ["./src/pages/*"],
       "@images/*": ["./static/images/*"]
     },
+    "target": "esnext",
     "moduleResolution": "node",
     "jsx": "react",
     "esModuleInterop": true,
