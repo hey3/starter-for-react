@@ -4,6 +4,7 @@
     "paths": {
       "@components/*": ["./src/components/*"],
       "@pages/*": ["./src/pages/*"],
+      "@themes/*": ["./src/themes/*"],
       "@images/*": ["./static/images/*"]
     },
     "target": "esnext",
