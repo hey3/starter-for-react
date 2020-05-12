@@ -9,6 +9,8 @@
     "target": "esnext",
     "moduleResolution": "node",
     "jsx": "react",
+    "types": ["react", "node", "jest"],
+    "typeRoots": ["./node_modules/@types", "./types"],
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
@@ -17,7 +19,6 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "skipLibCheck": true,
     "strict": true
   }
 }
