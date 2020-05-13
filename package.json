@@ -30,7 +30,8 @@
     "start:prod": "BUILD_MODE='production' REACT_APP_ENV='production' webpack-dev-server --open",
     "start:stg": "BUILD_MODE='production' REACT_APP_ENV='staging' webpack-dev-server --open",
     "storybook": "start-storybook -p 6006",
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "test:coverage": "jest --passWithNoTests --coverage"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -59,6 +60,7 @@
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
     "@types/react-router-dom": "^5.1.5",
+    "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components": "^5.1.0",
     "babel-loader": "^8.1.0",
     "dotenv-webpack": "^1.8.0",
@@ -73,6 +75,7 @@
     "lint-staged": "^10.2.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1",
     "storybook-readme": "^5.0.8",
     "styled-reset": "^4.1.4",
     "stylelint": "^13.3.3",
