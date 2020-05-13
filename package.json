@@ -30,7 +30,8 @@
     "start:prod": "BUILD_MODE='production' REACT_APP_ENV='production' webpack-dev-server --open",
     "start:stg": "BUILD_MODE='production' REACT_APP_ENV='staging' webpack-dev-server --open",
     "storybook": "start-storybook -p 6006",
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "test:coverage": "jest --passWithNoTests --coverage"
   },
   "dependencies": {
     "core-js": "^3.6.5",
