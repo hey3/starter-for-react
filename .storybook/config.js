@@ -1,9 +1,9 @@
 import React from 'react'
 import { configure, addDecorator, addParameters } from '@storybook/react'
 import { create } from '@storybook/theming'
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import { withA11y } from '@storybook/addon-a11y'
 import { addReadme } from 'storybook-readme'
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 
 import ThemeProvider from '../src/themes/ThemeProvider'
 
