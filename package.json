@@ -77,7 +77,7 @@
     "react-test-renderer": "^16.13.1",
     "storybook-readme": "^5.0.8",
     "styled-reset": "^4.1.4",
-    "stylelint": "^13.3.3",
+    "stylelint": "^13.4.1",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-config-styled-components": "^0.1.1",
