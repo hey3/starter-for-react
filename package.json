@@ -31,7 +31,8 @@
     "start:stg": "BUILD_MODE='production' REACT_APP_ENV='staging' webpack-dev-server --open",
     "storybook": "start-storybook -p 6006",
     "test": "jest --passWithNoTests",
-    "test:coverage": "jest --passWithNoTests --coverage"
+    "test:coverage": "jest --passWithNoTests --coverage",
+    "test:virtual-update": "jest --updateSnapshot"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -71,6 +72,7 @@
     "html-webpack-plugin": "^4.3.0",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
+    "jest-styled-components": "^7.0.2",
     "lint-staged": "^10.2.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
