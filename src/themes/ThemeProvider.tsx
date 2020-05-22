@@ -6,10 +6,10 @@ import { ThemeContext } from './themeContext'
 
 const { Provider } = ThemeContext
 
-const ThemeProvider: React.FC = ({ children }) => {
+export const ThemeProvider: React.FC = ({ children }) => {
   const [colorMode, setColorMode] = useState<ColorMode>('light')
 
-  function toggleColorMode() {
+  const toggleColorMode = () => {
     setColorMode(colorMode === 'light' ? 'dark' : 'light')
   }
   return (
@@ -25,5 +25,3 @@ const ThemeProvider: React.FC = ({ children }) => {
     </StyledProvider>
   )
 }
-
-export default ThemeProvider

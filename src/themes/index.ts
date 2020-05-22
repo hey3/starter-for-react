@@ -41,7 +41,3 @@ export const getTheme = (colorMode: ColorMode): BaseTheme => {
       return darkTheme
   }
 }
-
-declare module 'styled-components' {
-  interface DefaultTheme extends BaseTheme {}
-}
