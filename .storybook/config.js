@@ -6,7 +6,7 @@ import { withKnobs } from '@storybook/addon-knobs'
 import { addReadme } from 'storybook-readme'
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 
-import ThemeProvider from '../src/themes/ThemeProvider'
+import { ThemeProvider } from '@themes/ThemeProvider'
 
 const req = require.context('../src/components', true, /.stories.tsx$/)
 
