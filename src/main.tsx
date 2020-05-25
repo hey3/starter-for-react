@@ -10,6 +10,8 @@ const GlobalStyle = createGlobalStyle`
     word-wrap: break-word;
     font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
     background-color: ${(props) => props.theme.color.BACKGROUND};
+    margin: 0;
+    padding: 0;
   }
 `
 
