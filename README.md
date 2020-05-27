@@ -13,6 +13,10 @@ Recommend to use as a template.
 2. Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.
 3. Run `yarn` in order to install dependencies. At this point you can run `yarn start:local` to see the example app
 
+#### If you use redux, use redux branch
+
+`git clone -b redux https://github.com/hey3/starter-for-react <YOUR_PROJECT_NAME>`
+
 ## Technology stacks
 
 This application make active usage of
