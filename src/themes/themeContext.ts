@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { ColorMode } from './index'
 
-type ThemeContextType = {
+export type ThemeContextType = {
   colorMode: ColorMode
   setColorMode: () => void
 }
