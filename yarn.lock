@@ -1198,7 +1198,7 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@hey3/eslint-config@^1.0.0":
+"@hey3/eslint-config@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@hey3/eslint-config/-/eslint-config-1.0.1.tgz#c11ded7e6f2bbd6f916136fb4cda89905ef2a085"
   integrity sha512-Zb4+br+xpSdaESxsqJEELH1YVh6BPK+cHz1wxZTaEFpe2Cf3uuZhufoc6rxq5XJ+tgtZ7jUu8tvni+HmdYNjIA==
