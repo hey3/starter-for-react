@@ -46,7 +46,6 @@ addons.setConfig({
 
   /**
    * theme storybook, see link below
-   * @type {Object}
    */
   theme: create({
     base: 'light',
