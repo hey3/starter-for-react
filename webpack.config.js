@@ -15,6 +15,7 @@ module.exports = {
   entry: './src/main.tsx',
   output: {
     path: path.resolve(__dirname, './dist'),
+    publicPath: '/',
     filename: 'build.js',
   },
   module: {
