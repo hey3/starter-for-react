@@ -35,17 +35,17 @@
     "test:virtual-update": "jest --updateSnapshot"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "core-js": "^3.8.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
-    "@babel/preset-typescript": "^7.10.4",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "@babel/preset-typescript": "^7.12.7",
     "@hey3/eslint-config": "^1.0.1",
     "@storybook/addon-a11y": "^6.0.26",
     "@storybook/addon-essentials": "^6.0.26",
