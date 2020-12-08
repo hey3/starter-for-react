@@ -9,7 +9,7 @@ const { Provider } = ThemeContext
 export const ThemeProvider: React.FC = ({ children }) => {
   const [colorMode, setColorMode] = useState<ColorMode>('light')
 
-  const toggleColorMode = () => {
+  const toggleColorMode = (): void => {
     setColorMode(colorMode === 'light' ? 'dark' : 'light')
   }
   return (
