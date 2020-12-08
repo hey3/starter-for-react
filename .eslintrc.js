@@ -7,7 +7,8 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    projects: './tsconfig.json',
+    ecmaVersion: 12,
+    sourceType: 'module',
   },
   ignorePatterns: ['node_modules/*', '!.prettierrc'],
   extends: ['eslint:recommended'],
