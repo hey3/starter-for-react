@@ -16,8 +16,6 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
-    // hot: true,
-    // hotOnly: true,
     open: true,
   },
   devtool: env === 'production' ? false : 'inline-source-map',
