@@ -18,7 +18,7 @@ module.exports = {
     historyApiFallback: true,
     open: true,
   },
-  devtool: env === 'production' ? false : 'inline-source-map',
+  devtool: mode === 'production' ? false : 'inline-source-map',
   entry: {
     main: {
       import: ['./src/main.tsx'],
