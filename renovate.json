@@ -21,22 +21,22 @@
     "postUpdateOptions": ["yarnDedupeHighest"],
     "packageRules": [
       {
-        "packagePatterns": ["*"],
-        "semanticCommitType": "chore"
+        "semanticCommitType": "chore",
+        "matchPackagePatterns": ["*"]
       },
       {
-        "depTypeList": ["dependencies", "peerDependencies"],
-        "semanticCommitType": "fix"
+        "semanticCommitType": "fix",
+        "matchDepTypes": ["dependencies", "peerDependencies"]
       },
       {
         "groupName": "Babel",
-        "packageNames": ["core-js"],
-        "packagePatterns": ["^@babel/"]
+        "matchPackageNames": ["core-js"],
+        "matchPackagePatterns": ["^@babel/"]
       },
       {
         "groupName": "ESLint and Prettier",
-        "packageNames": ["eslint", "prettier"],
-        "packagePatterns": [
+        "matchPackageNames": ["eslint", "prettier"],
+        "matchPackagePatterns": [
           "^eslint-config-",
           "^eslint-plugin-",
           "^@typescript-eslint/",
@@ -45,11 +45,11 @@
       },
       {
         "groupName": "Loader",
-        "packageNames": ["babel-loader", "file-loader"]
+        "matchPackageNames": ["babel-loader", "file-loader"]
       },
       {
         "groupName": "Test",
-        "packageNames": [
+        "matchPackageNames": [
           "enzyme",
           "jest",
           "jest-styled-components",
@@ -59,36 +59,34 @@
       },
       {
         "groupName": "Typescript",
-        "packageNames": ["typescript"]
+        "matchPackageNames": ["typescript"]
       },
       {
         "groupName": "React",
-        "packageNames": ["react"],
-        "packagePatterns": ["^react-"]
+        "matchPackageNames": ["react"],
+        "matchPackagePatterns": ["^react-"]
       },
       {
         "groupName": "Styled-components",
-        "packageNames": ["styled-components"]
+        "matchPackageNames": ["styled-components"]
       },
       {
         "groupName": "Webpack",
-        "packageNames": ["dotenv-webpack", "html-webpack-plugin", "webpack"],
-        "packagePatterns": ["^webpack-"]
+        "matchPackageNames": ["dotenv-webpack", "html-webpack-plugin", "webpack"],
+        "matchPackagePatterns": ["^webpack-"]
       },
       {
         "description": "automerge @types minor",
-        "packagePatterns": ["^@types/"],
         "automerge": true,
-        "major": {
-          "automerge": false
-        }
+        "major": { "automerge": false },
+        "matchPackagePatterns": ["^@types/"]
       },
       {
         "description": "automerge minor updates of widely used libraries in devDeps",
-        "updateTypes": ["minor"],
-        "depTypeList": ["devDependencies"],
         "automerge": true,
-        "packageNames": ["fixpack", "npm-run-all"]
+        "matchUpdateTypes": ["minor"],
+        "matchDepTypes": ["devDependencies"],
+        "matchPackageNames": ["fixpack", "npm-run-all"]
       }
     ]
   }
