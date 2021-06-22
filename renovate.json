@@ -76,12 +76,13 @@
         "matchPackagePatterns": ["^webpack-"]
       },
       {
-        "description": "automerge @types minor",
+        "groupName": "automergeTypesMinor",
         "automerge": true,
         "major": { "automerge": false },
         "matchPackagePatterns": ["^@types/"]
       },
       {
+        "groupName": "devDeps",
         "description": "automerge minor updates of widely used libraries in devDeps",
         "automerge": true,
         "matchUpdateTypes": ["minor"],
