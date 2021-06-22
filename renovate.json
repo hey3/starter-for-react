@@ -67,6 +67,10 @@
         "matchPackagePatterns": ["^react-"]
       },
       {
+        "groupName": "storybook",
+        "matchPackagePatterns": ["^@storybook/"]
+      },
+      {
         "groupName": "Styled-components",
         "matchPackageNames": ["styled-components"]
       },
