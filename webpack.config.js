@@ -14,9 +14,11 @@ module.exports = {
     },
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
     open: true,
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
   },
   devtool: mode === 'production' ? false : 'inline-source-map',
   entry: {
