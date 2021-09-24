@@ -81,6 +81,6 @@ module.exports = {
   resolveLoader: {},
   snapshot: {},
   stats: {},
-  target: 'web',
+  target: ['web', 'es5'],
   watchOptions: {},
 }
