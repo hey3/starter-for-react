@@ -20,7 +20,7 @@ module.exports = {
       directory: path.resolve(__dirname, 'dist'),
     },
   },
-  devtool: mode === 'production' ? false : 'inline-source-map',
+  devtool: env === 'production' ? false : 'inline-source-map',
   entry: {
     main: {
       import: ['./src/main.tsx'],
