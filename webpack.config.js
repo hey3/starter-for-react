@@ -26,11 +26,9 @@ module.exports = {
       import: ['./src/main.tsx'],
     },
   },
-  experiments: {},
-  // FIXME: assetModulesを使うように修正
-  // experiments: {
-  //   asset: true,
-  // },
+  experiments: {
+    asset: true,
+  },
   externals: {},
   externalsPresets: {},
   infrastructureLogging: {},
@@ -43,13 +41,8 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
-        loader: 'file-loader',
+        type: 'asset',
       },
-      // FIXME: assetModulesを使うように修正
-      // {
-      //   test: /\.(png|jpg|gif)$/,
-      //   type: 'asset',
-      // },
     ],
   },
   node: {},
