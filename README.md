@@ -28,7 +28,6 @@ This application make active usage of
 - [ESLint](https://eslint.org/)
 - [stylelint](https://stylelint.io/)
 - [Jest](https://jestjs.io/)
-- [Enzyme](https://www.enzyme.org/)
 - [Prettier](https://prettier.io/)
 - [StoryBook](https://storybook.js.org/)
 - [husky](https://github.com/typicode/husky)

@@ -14,9 +14,11 @@ module.exports = {
     },
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
     open: true,
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
   },
   devtool: mode === 'production' ? false : 'inline-source-map',
   entry: {
@@ -24,11 +26,9 @@ module.exports = {
       import: ['./src/main.tsx'],
     },
   },
-  experiments: {},
-  // FIXME: assetModulesを使うように修正
-  // experiments: {
-  //   asset: true,
-  // },
+  experiments: {
+    asset: true,
+  },
   externals: {},
   externalsPresets: {},
   infrastructureLogging: {},
@@ -41,13 +41,8 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
-        loader: 'file-loader',
+        type: 'asset',
       },
-      // FIXME: assetModulesを使うように修正
-      // {
-      //   test: /\.(png|jpg|gif)$/,
-      //   type: 'asset',
-      // },
     ],
   },
   node: {},
@@ -79,6 +74,6 @@ module.exports = {
   resolveLoader: {},
   snapshot: {},
   stats: {},
-  target: 'web',
+  target: ['web', 'es5'],
   watchOptions: {},
 }
