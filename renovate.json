@@ -50,7 +50,6 @@
       {
         "groupName": "Test",
         "matchPackageNames": [
-          "enzyme",
           "jest",
           "jest-styled-components",
           "ts-jest",
