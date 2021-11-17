@@ -8,7 +8,7 @@ import { ThemeProvider } from '@themes/ThemeProvider'
 const GlobalStyle = createGlobalStyle`
   body {
     word-wrap: break-word;
-    font-family: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+    font-family: Helvetica Neue, Arial, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
     background-color: ${props => props.theme.color.BACKGROUND};
     margin: 0;
     padding: 0;
