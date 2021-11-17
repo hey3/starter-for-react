@@ -24,8 +24,8 @@
       },
       {
         groupName: 'Lint families',
-        matchPackageNames: ['eslint', 'prettier', 'stylelint'],
-        matchPackagePatterns: ['^eslint-', '^@typescript-eslint', '^stylelint-'],
+        matchPackageNames: ['eslint', 'prettier', 'stylelint', 'postcss-syntax'],
+        matchPackagePatterns: ['^eslint-', '^@typescript-eslint', '^stylelint-', '@stylelint/'],
       },
       {
         groupName: 'Test families',

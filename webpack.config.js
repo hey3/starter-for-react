@@ -26,9 +26,7 @@ module.exports = {
       import: ['./src/main.tsx'],
     },
   },
-  experiments: {
-    asset: true,
-  },
+  experiments: {},
   externals: {},
   externalsPresets: {},
   infrastructureLogging: {},
