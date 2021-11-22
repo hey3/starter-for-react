@@ -2638,10 +2638,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^27.0.2":
-  version "27.0.2"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-27.0.2.tgz#ac383c4d4aaddd29bbf2b916d8d105c304a5fcd7"
-  integrity sha512-4dRxkS/AFX0c5XW6IPMNOydLn2tEhNhJV7DnYK+0bjoJZ+QTmfucBlihX7aoEsh/ocYtkLC73UbnBXBXIxsULA==
+"@types/jest@^27.0.3":
+  version "27.0.3"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-27.0.3.tgz#0cf9dfe9009e467f70a342f0f94ead19842a783a"
+  integrity sha512-cmmwv9t7gBYt7hNKH5Spu7Kuu/DotGa+Ff+JGRKZ4db5eh8PnKS4LuebJ3YLUoyOyIHraTGyULn23YtEAm0VSg==
   dependencies:
     jest-diff "^27.0.0"
     pretty-format "^27.0.0"
@@ -8207,10 +8207,10 @@ jest-snapshot@^27.3.1:
     pretty-format "^27.3.1"
     semver "^7.3.2"
 
-jest-styled-components@^7.0.6:
-  version "7.0.6"
-  resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-7.0.6.tgz#f30a39f778f50b2619636523abee6e4fd50d5654"
-  integrity sha512-asCitkJfaO1TX60nbIBXDUglblDFvKl9aKA5IV09AmO2zL6DC89MgrK73/e7zXzMOpzyVmuXQLLYlsDUSYIb7g==
+jest-styled-components@^7.0.8:
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-7.0.8.tgz#9ea3b43f002de060b4638fde3b422d14b3e3ec9f"
+  integrity sha512-0KE54d0yIzKcvtOv8eikyjG3rFRtKYUyQovaoha3nondtZzXYGB3bhsvYgEegU08Iry0ndWx2+g9f5ZzD4I+0Q==
   dependencies:
     css "^3.0.0"
 
