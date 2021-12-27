@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { createContext } from 'react'
 
 import { ColorMode } from './index'
 
@@ -12,4 +12,4 @@ const defaultContext: ThemeContextType = {
   setColorMode: () => console.log('changed color mode'),
 }
 
-export const ThemeContext = React.createContext<ThemeContextType>(defaultContext)
+export const ThemeContext = createContext<ThemeContextType>(defaultContext)

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { FC, useState } from 'react'
 import { ThemeProvider as StyledProvider } from 'styled-components'
 
 import { ColorMode, getTheme } from './index'
@@ -6,7 +6,7 @@ import { ThemeContext } from './themeContext'
 
 const { Provider } = ThemeContext
 
-export const ThemeProvider: React.FC = ({ children }) => {
+export const ThemeProvider: FC = ({ children }) => {
   const [colorMode, setColorMode] = useState<ColorMode>('light')
 
   const toggleColorMode = (): void => {
