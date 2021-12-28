@@ -1,6 +1,4 @@
-import React from 'react'
-
-import { ThemeProvider } from '@themes/ThemeProvider'
+import { ThemeProvider } from '../src/themes/ThemeProvider'
 
 export const decorators = [
   Story => (

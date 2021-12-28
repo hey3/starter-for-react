@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom'
+import { render, type RenderOptions, type RenderResult } from '@testing-library/react'
 import 'jest-styled-components'
 import { FC, ReactElement } from 'react'
-import { render, RenderOptions, RenderResult } from '@testing-library/react'
-import { ThemeProvider } from '@themes/ThemeProvider'
+import { ThemeProvider } from '../src/themes/ThemeProvider'
 
 const AllTheProviders: FC = ({ children }) => {
   return <ThemeProvider>{children}</ThemeProvider>
