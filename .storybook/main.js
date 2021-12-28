@@ -11,7 +11,6 @@ module.exports = {
     module: { ...config.module, rules: custom.module.rules },
     resolve: {
       ...config.resolve,
-      alias: custom.resolve.alias,
       extensions: custom.resolve.extensions,
     },
   }),
