@@ -30,7 +30,8 @@ module.exports = {
         'plugin:prettier/recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:prettier/recommended',
-        'plugin:import/errors',
+        'plugin:import/recommended',
+        'plugin:import/typescript',
       ],
       rules: {
         'prettier/prettier': [
