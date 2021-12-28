@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom'
-import { render, type RenderOptions, type RenderResult } from '@testing-library/react'
+import { render, RenderOptions, RenderResult } from '@testing-library/react'
 import 'jest-styled-components'
 import { FC, ReactElement } from 'react'
 import { ThemeProvider } from '../src/themes/ThemeProvider'
