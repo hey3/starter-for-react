@@ -1,13 +1,6 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "paths": {
-      "@components/*": ["./src/components/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@themes/*": ["./src/themes/*"],
-      "@images/*": ["./static/images/*"],
-      "@test/*": ["./test/*"]
-    },
     "target": "esnext",
     "moduleResolution": "node",
     "jsx": "react-jsx",

@@ -1,8 +1,7 @@
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import { createGlobalStyle } from 'styled-components'
-
-import { ThemeProvider } from '@themes/ThemeProvider'
+import { ThemeProvider } from './themes/ThemeProvider'
 
 const GlobalStyle = createGlobalStyle`
   body {

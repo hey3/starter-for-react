@@ -1,6 +1,6 @@
-import { ColorTheme, baseDark, baseLight } from './colorTheme'
-import { SizeTheme, baseSize } from './sizeTheme'
-import { FrameTheme, baseFrame } from './frameTheme'
+import { baseDark, baseLight, ColorTheme } from './colorTheme'
+import { baseFrame, FrameTheme } from './frameTheme'
+import { baseSize, SizeTheme } from './sizeTheme'
 
 export type ColorMode = 'light' | 'dark'
 export type BaseTheme = {

@@ -61,13 +61,6 @@ module.exports = {
     }),
   ],
   resolve: {
-    alias: {
-      '@components': path.resolve(__dirname, './src/components'),
-      '@pages': path.resolve(__dirname, './src/pages'),
-      '@themes': path.resolve(__dirname, './src/themes'),
-      '@images': path.resolve(__dirname, './static/images'),
-      '@test': path.resolve(__dirname, './test'),
-    },
     extensions: ['.js', '.ts', '.tsx'],
   },
   resolveLoader: {},

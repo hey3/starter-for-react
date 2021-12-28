@@ -1,7 +1,6 @@
 import { FC, useState } from 'react'
 import { ThemeProvider as StyledProvider } from 'styled-components'
-
-import { ColorMode, getTheme } from './index'
+import { ColorMode, getTheme } from '.'
 import { ThemeContext } from './themeContext'
 
 const { Provider } = ThemeContext

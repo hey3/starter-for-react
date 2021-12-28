@@ -1,6 +1,5 @@
 import { createContext } from 'react'
-
-import { ColorMode } from './index'
+import { ColorMode } from '.'
 
 export type ThemeContextType = {
   colorMode: ColorMode

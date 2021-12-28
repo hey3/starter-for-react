@@ -30,6 +30,7 @@ module.exports = {
         'plugin:prettier/recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:prettier/recommended',
+        'plugin:import/errors',
       ],
       rules: {
         'prettier/prettier': [
@@ -37,6 +38,14 @@ module.exports = {
           {},
           {
             usePrettierrc: true,
+          },
+        ],
+        'import/export': 'off',
+        'import/order': [
+          'error',
+          {
+            groups: ['builtin', 'external', 'internal', 'parent', 'index', 'object', 'type'],
+            alphabetize: { order: 'asc', caseInsensitive: true },
           },
         ],
         'react/prop-types': 'off',
