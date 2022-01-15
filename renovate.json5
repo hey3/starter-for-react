@@ -56,7 +56,6 @@
           'react-router-dom',
           '@types/react',
           '@types/react-dom',
-          '@types/react-router-dom',
         ],
       },
       {
