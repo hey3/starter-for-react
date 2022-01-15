@@ -15,25 +15,28 @@ Recommend to use as a template.
 
 #### If you use redux, use redux repository
 
-https://github.com/hey3/starter-for-react-with-redux
+:warning: No longer maintenance.
+
+~~https://github.com/hey3/starter-for-react-with-redux~~
 
 ## Technology stacks
 
 This application make active usage of
-- [React](https://reactjs.org/) 
+
+- [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
-- [Styled-Components](https://styled-components.com/)
+- [styled-components](https://styled-components.com/)
 - [ESLint](https://eslint.org/)
-- [stylelint](https://stylelint.io/)
+- [Stylelint](https://stylelint.io/)
 - [Jest](https://jestjs.io/)
 - [Prettier](https://prettier.io/)
-- [StoryBook](https://storybook.js.org/)
+- [Storybook](https://storybook.js.org/)
 - [husky](https://github.com/typicode/husky)
 - [lint-staged](https://github.com/okonet/lint-staged)
 - [fixpack](https://github.com/henrikjoreteg/fixpack)
-- [yarn](https://yarnpkg.com)
+- [Yarn](https://yarnpkg.com)
 
 ## License
 
