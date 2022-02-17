@@ -1,81 +1,81 @@
 {
   extends: ['config:base'],
-  npm: {
-    timezone: 'Asia/Tokyo',
-    labels: ['renovate'],
-    schedule: ['every weekend'],
-    commitMessagePrefix: 'ci: ',
-    lockFileMaintenance: {
-      enabled: true,
-    },
-    separateMinorPatch: true,
-    vulnerabilityAlerts: {
-      labels: ['security'],
-    },
-    patch: {
-      automerge: true,
-    },
-    packageRules: [
-      {
-        groupName: 'Babel families',
-        matchPackageNames: ['core-js'],
-        matchPackagePatterns: ['^@babel', '^babel'],
-      },
-      {
-        groupName: 'Lint families',
-        matchPackageNames: ['eslint', 'prettier', 'stylelint', 'postcss-syntax'],
-        matchPackagePatterns: [
-          '^eslint-',
-          '^prettier-',
-          '^@typescript-eslint',
-          '^stylelint-',
-          '@stylelint/',
-        ],
-      },
-      {
-        groupName: 'Test families',
-        matchPackageNames: [
-          'jest',
-          'ts-jest',
-          '@types/jest',
-          '@testing-library/jest-dom',
-          '@testing-library/react',
-          '@testing-library/user-event',
-        ],
-        matchPackagePatterns: ['^jest-'],
-      },
-      {
-        groupName: 'Typescript',
-        matchPackageNames: ['typescript'],
-      },
-      {
-        groupName: 'React families',
-        matchPackageNames: [
-          'react',
-          'react-dom',
-          'react-router-dom',
-          '@types/react',
-          '@types/react-dom',
-        ],
-      },
-      {
-        groupName: 'Storybook families',
-        matchPackagePatterns: ['^@storybook'],
-      },
-      {
-        groupName: 'Styled-components families',
-        matchPackageNames: ['styled-components', '@types/styled-components'],
-      },
-      {
-        groupName: 'Webpack families',
-        matchPackageNames: [
-          'webpack',
-          'webpack-cli',
-          'webpack-dev-server',
-          'dotenv-webpack',
-          'html-webpack-plugin',
-        ],
-      },
-    ],
+  timezone: 'Asia/Tokyo',
+  schedule: ['every weekend'],
+  lockFileMaintenance: {
+    enabled: true,
+    automerge: true,
+    schedule: ['before 3am on the first day of the month'],
   },
+  labels: ['renovate'],
+  commitMessagePrefix: 'ci: ',
+  vulnerabilityAlerts: {
+    labels: ['security'],
+  },
+  separateMinorPatch: true,
+  patch: {
+    automerge: true,
+  },
+  packageRules: [
+    {
+      groupName: 'Babel families',
+      matchPackageNames: ['core-js'],
+      matchPackagePatterns: ['^@babel', '^babel'],
+    },
+    {
+      groupName: 'Lint families',
+      matchPackageNames: ['eslint', 'prettier', 'stylelint', 'postcss-syntax'],
+      matchPackagePatterns: [
+        '^eslint-',
+        '^prettier-',
+        '^@typescript-eslint',
+        '^stylelint-',
+        '@stylelint/',
+      ],
+    },
+    {
+      groupName: 'Test families',
+      matchPackageNames: [
+        'jest',
+        'ts-jest',
+        '@types/jest',
+        '@testing-library/jest-dom',
+        '@testing-library/react',
+        '@testing-library/user-event',
+      ],
+      matchPackagePatterns: ['^jest-'],
+    },
+    {
+      groupName: 'Typescript',
+      matchPackageNames: ['typescript'],
+    },
+    {
+      groupName: 'React families',
+      matchPackageNames: [
+        'react',
+        'react-dom',
+        'react-router-dom',
+        '@types/react',
+        '@types/react-dom',
+      ],
+    },
+    {
+      groupName: 'Storybook families',
+      matchPackagePatterns: ['^@storybook'],
+    },
+    {
+      groupName: 'Styled-components families',
+      matchPackageNames: ['styled-components', '@types/styled-components'],
+    },
+    {
+      groupName: 'Webpack families',
+      matchPackageNames: [
+        'webpack',
+        'webpack-cli',
+        'webpack-dev-server',
+        'dotenv-webpack',
+        'html-webpack-plugin',
+      ],
+    },
+  ],
 }
