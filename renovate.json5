@@ -12,6 +12,7 @@
   vulnerabilityAlerts: {
     labels: ['security'],
   },
+  enabledManagers: ['npm'],
   separateMinorPatch: true,
   patch: {
     automerge: true,
