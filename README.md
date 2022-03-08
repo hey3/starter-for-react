@@ -13,29 +13,20 @@ Recommend to use as a template.
 2. Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.
 3. Run `yarn` in order to install dependencies. At this point you can run `yarn start:local` to see the example app
 
-#### If you use redux, use redux repository
-
-:warning: No longer maintenance.
-
-~~https://github.com/hey3/starter-for-react-with-redux~~
-
 ## Technology stacks
 
 This application make active usage of
 
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [styled-components](https://styled-components.com/)
 - [webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
-- [styled-components](https://styled-components.com/)
+- [Jest](https://jestjs.io/)
+- [Storybook](https://storybook.js.org/)
 - [ESLint](https://eslint.org/)
 - [Stylelint](https://stylelint.io/)
-- [Jest](https://jestjs.io/)
 - [Prettier](https://prettier.io/)
-- [Storybook](https://storybook.js.org/)
-- [husky](https://github.com/typicode/husky)
-- [lint-staged](https://github.com/okonet/lint-staged)
-- [fixpack](https://github.com/henrikjoreteg/fixpack)
 - [Yarn](https://yarnpkg.com)
 
 ## License

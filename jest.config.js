@@ -2,7 +2,7 @@ module.exports = {
   clearMocks: true,
   coverageDirectory: 'coverage',
   moduleNameMapper: {
-    '\\.(png|jpg|jpeg|gif|svg)$': '<rootDir>/__mocks__/fileMock.js',
+    '\\.(png|jpg|jpeg|gif|svg)$': '<rootDir>/test/__mocks__/fileMock.js',
   },
   roots: ['<rootDir>/src'],
   testEnvironment: 'jest-environment-jsdom',

@@ -2,10 +2,10 @@ import '@testing-library/jest-dom'
 import { render, RenderOptions, RenderResult } from '@testing-library/react'
 import 'jest-styled-components'
 import { FC, ReactElement } from 'react'
-import { ThemeProvider } from '../src/themes/ThemeProvider'
 
 const AllTheProviders: FC = ({ children }) => {
-  return <ThemeProvider>{children}</ThemeProvider>
+  // Add Custom Provides like a Theme Provider.
+  return <>{children}</>
 }
 
 const customRender = (ui: ReactElement, options?: Omit<RenderOptions, 'wrapper'>): RenderResult =>
