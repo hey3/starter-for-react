@@ -3,14 +3,19 @@ const path = require('path')
 module.exports = {
   root: true,
   env: {
-    es2021: true,
+    es2022: true,
     node: true,
   },
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  ignorePatterns: ['node_modules/*', '!.prettierrc'],
+  settings: {
+    'import/resolver': {
+      webpack: { config: path.join(__dirname, './webpack.config.js') },
+    },
+  },
+  ignorePatterns: ['node_modules/*'],
   extends: ['eslint:recommended'],
   overrides: [
     {
@@ -19,28 +24,18 @@ module.exports = {
       settings: { react: { version: 'detect' } },
       env: {
         browser: true,
-        es2021: true,
-        node: true,
       },
       extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
-        'plugin:prettier/recommended',
         'plugin:jsx-a11y/recommended',
-        'plugin:prettier/recommended',
         'plugin:import/recommended',
         'plugin:import/typescript',
+        'eslint-config-prettier',
       ],
       rules: {
-        'prettier/prettier': [
-          'error',
-          {},
-          {
-            usePrettierrc: true,
-          },
-        ],
         'import/export': 'off',
         'import/order': [
           'error',
@@ -62,12 +57,4 @@ module.exports = {
       },
     },
   ],
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-      webpack: { config: path.join(__dirname, './webpack.config.js') },
-    },
-  },
 }
