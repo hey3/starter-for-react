@@ -39,7 +39,7 @@
     "test": "jest --passWithNoTests",
     "test:coverage": "jest --passWithNoTests --coverage",
     "test:virtual-update": "jest --updateSnapshot",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --project tsconfig.json --pretty --noEmit --incremental false"
   },
   "dependencies": {
     "core-js": "3.21.1",

@@ -1,6 +1,6 @@
 # Starter-for-react
 
-![Check workflow](https://github.com//hey3/starter-for-solid/actions/workflows/check.yml/badge.svg)
+![Check workflow](https://github.com//hey3/starter-for-react/actions/workflows/check.yml/badge.svg)
 [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
 
 ## How to use
