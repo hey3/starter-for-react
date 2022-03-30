@@ -1,0 +1,27 @@
+name: Check
+
+on:
+  pull_request:
+    branch: ['*', '!master']
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    name: Install dependencies
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: ./.github/actions/setup
+
+      - name: Run lint
+        run: |
+          yarn lint
+          yarn format
+
+      - name: Run typecheck
+        run: yarn typecheck
+
+      - name: Runt test
+        run: yarn test
+
+      - name: Run compile
+        run: yarn build:stg
