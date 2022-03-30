@@ -1,6 +1,6 @@
-## Starter-for-react
+# Starter-for-react
 
-[![CircleCI](https://circleci.com/gh/hey3/starter-for-react/tree/master.svg?style=svg)](https://circleci.com/gh/hey3/starter-for-react/tree/master)
+![Check workflow](https://github.com//hey3/starter-for-solid/actions/workflows/check.yml/badge.svg)
 [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com)
 
 ## How to use

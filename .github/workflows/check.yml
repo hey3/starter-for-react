@@ -6,7 +6,7 @@ on:
 jobs:
   setup:
     runs-on: ubuntu-latest
-    name: Install dependencies
+    name: lint and compile
     steps:
       - uses: actions/checkout@v3
 
