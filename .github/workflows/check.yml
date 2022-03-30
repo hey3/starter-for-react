@@ -4,7 +4,7 @@ on:
   pull_request:
     branch: ['*', '!master']
 jobs:
-  setup:
+  check:
     runs-on: ubuntu-latest
     name: lint and compile
     steps:
