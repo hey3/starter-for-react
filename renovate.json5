@@ -34,17 +34,12 @@
     },
     {
       groupName: 'React families',
-      matchPackageNames: [
-        'react',
-        'react-dom',
-        '@types/react',
-        '@types/react-dom',
-      ],
+      matchPackageNames: ['react', 'react-dom', '@types/react', '@types/react-dom'],
     },
     {
       groupName: 'Routing families',
-      matchPackageNames: ['react-router-dom']
-    }
+      matchPackageNames: ['react-router-dom'],
+    },
     {
       groupName: 'Storybook families',
       matchPackagePatterns: ['^@storybook'],
