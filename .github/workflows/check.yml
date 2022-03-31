@@ -14,14 +14,14 @@ jobs:
 
       - name: Run lint
         run: |
-          yarn lint
-          yarn format
+          pnpm lint
+          pnpm format
 
       - name: Run typecheck
-        run: yarn typecheck
+        run: pnpm typecheck
 
       - name: Runt test
-        run: yarn test
+        run: pnpm test
 
       - name: Run compile
-        run: yarn build:stg
+        run: pnpm build
