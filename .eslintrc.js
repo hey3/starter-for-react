@@ -1,19 +1,12 @@
-const path = require('path')
-
 module.exports = {
   root: true,
   env: {
-    es2022: true,
     node: true,
+    es2022: true,
   },
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-  },
-  settings: {
-    'import/resolver': {
-      webpack: { config: path.join(__dirname, './webpack.config.js') },
-    },
   },
   ignorePatterns: ['node_modules/*'],
   extends: ['eslint:recommended'],
@@ -26,7 +19,6 @@ module.exports = {
         browser: true,
       },
       extends: [
-        'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
@@ -57,4 +49,12 @@ module.exports = {
       },
     },
   ],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.ts', '.tsx'],
+        paths: ['node_modules/', 'node_modules/@types'],
+      },
+    },
+  },
 }

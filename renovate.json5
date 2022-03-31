@@ -19,32 +19,14 @@
   },
   packageRules: [
     {
-      groupName: 'Babel families',
-      matchPackageNames: ['core-js'],
-      matchPackagePatterns: ['^@babel', '^babel'],
-    },
-    {
       groupName: 'Lint families',
       matchPackageNames: ['eslint', 'prettier', 'stylelint', 'postcss-syntax'],
-      matchPackagePatterns: [
-        '^eslint-',
-        '^prettier-',
-        '^@typescript-eslint',
-        '^stylelint-',
-        '@stylelint/',
-      ],
+      matchPackagePatterns: ['^eslint-', '^@typescript-eslint', '^stylelint-', '@stylelint/'],
     },
     {
       groupName: 'Test families',
-      matchPackageNames: [
-        'jest',
-        'ts-jest',
-        '@types/jest',
-        '@testing-library/jest-dom',
-        '@testing-library/react',
-        '@testing-library/user-event',
-      ],
-      matchPackagePatterns: ['^jest-'],
+      matchPackageNames: ['vitest', 'jsdom'],
+      matchPackagePatterns: ['^@testing-library'],
     },
     {
       groupName: 'Typescript',
@@ -55,11 +37,14 @@
       matchPackageNames: [
         'react',
         'react-dom',
-        'react-router-dom',
         '@types/react',
         '@types/react-dom',
       ],
     },
+    {
+      groupName: 'Routing families',
+      matchPackageNames: ['react-router-dom']
+    }
     {
       groupName: 'Storybook families',
       matchPackagePatterns: ['^@storybook'],
@@ -69,14 +54,8 @@
       matchPackageNames: ['styled-components', '@types/styled-components'],
     },
     {
-      groupName: 'Webpack families',
-      matchPackageNames: [
-        'webpack',
-        'webpack-cli',
-        'webpack-dev-server',
-        'dotenv-webpack',
-        'html-webpack-plugin',
-      ],
+      groupName: 'Builder families',
+      matchPackageNames: ['vite', '@vitejs/plugin-react', '@storybook/builder-vite'],
     },
   ],
 }

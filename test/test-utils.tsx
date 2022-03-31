@@ -1,6 +1,4 @@
-import '@testing-library/jest-dom'
 import { render, RenderOptions, RenderResult } from '@testing-library/react'
-import 'jest-styled-components'
 import { FC, ReactElement } from 'react'
 
 const AllTheProviders: FC = ({ children }) => {
