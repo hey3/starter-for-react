@@ -1,19 +1,21 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "target": "esnext",
+    "module": "esnext",
     "moduleResolution": "node",
     "jsx": "react-jsx",
-    "types": ["react", "node", "jest"],
+    "types": ["react", "vite/client", "vitest/globals"],
     "typeRoots": ["node_modules/@types", "src/types"],
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
     "esModuleInterop": true,
-    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "noEmit": true,
     "noFallthroughCasesInSwitch": false,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "strict": true
+    "noUnusedParameters": true
   }
 }
