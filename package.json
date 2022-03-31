@@ -4,7 +4,10 @@
   "description": "hey3's boilerplate for Web Frontend",
   "keywords": [
     "react",
-    "typescript"
+    "typescript",
+    "vite",
+    "pnpm",
+    "boilerplate-template"
   ],
   "homepage": "https://github.com/hey3/starter-for-react#readme",
   "bugs": {
