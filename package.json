@@ -52,7 +52,7 @@
     "@storybook/builder-vite": "0.1.23",
     "@storybook/react": "6.4.20",
     "@storybook/testing-react": "1.2.4",
-    "@testing-library/jest-dom": "5.16.3",
+    "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "12.1.4",
     "@testing-library/user-event": "13.5.0",
     "@types/react": "17.0.44",
@@ -77,7 +77,7 @@
     "stylelint-config-styled-components": "0.1.1",
     "typescript": "4.6.3",
     "vite": "2.9.1",
-    "vitest": "0.8.4"
+    "vitest": "0.8.5"
   },
   "dependenciesComments": {
     "@storybook/addon-a11y": [
