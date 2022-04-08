@@ -7,7 +7,7 @@ specifiers:
   '@storybook/react': 6.4.20
   '@storybook/testing-react': 1.2.4
   '@stylelint/postcss-css-in-js': 0.37.2
-  '@testing-library/jest-dom': 5.16.3
+  '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 12.1.4
   '@testing-library/user-event': 13.5.0
   '@types/react': 17.0.44
@@ -36,7 +36,7 @@ specifiers:
   stylelint-config-styled-components: 0.1.1
   typescript: 4.6.3
   vite: 2.9.1
-  vitest: 0.8.4
+  vitest: 0.8.5
 
 dependencies:
   react: 17.0.2
@@ -51,7 +51,7 @@ devDependencies:
   '@storybook/react': 6.4.20_7f4f10f6ab42467be90e2d161bf851e2
   '@storybook/testing-react': 1.2.4_cb7ed94406d3c7ba096460d903dc4d91
   '@stylelint/postcss-css-in-js': 0.37.2_postcss-syntax@0.36.2
-  '@testing-library/jest-dom': 5.16.3
+  '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
   '@testing-library/user-event': 13.5.0
   '@types/react': 17.0.44
@@ -76,7 +76,7 @@ devDependencies:
   stylelint-config-styled-components: 0.1.1
   typescript: 4.6.3
   vite: 2.9.1
-  vitest: 0.8.4_jsdom@19.0.0
+  vitest: 0.8.5_jsdom@19.0.0
 
 packages:
 
@@ -3349,8 +3349,8 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/jest-dom/5.16.3:
-    resolution: {integrity: sha512-u5DfKj4wfSt6akfndfu1eG06jsdyA/IUrlX2n3pyq5UXgXMhXY+NJb8eNK/7pqPWAhCKsCGWDdDO0zKMKAYkEA==}
+  /@testing-library/jest-dom/5.16.4:
+    resolution: {integrity: sha512-Gy+IoFutbMQcky0k+bqqumXZ1cTGswLsFqmNLzNdSKkU9KGV2u9oXhukCbbJ9/LRPKiqwxEE8VpV/+YZlfkPUA==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@babel/runtime': 7.17.8
@@ -11991,8 +11991,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.8.4_jsdom@19.0.0:
-    resolution: {integrity: sha512-1OoAG1+VYkzp4WLCVQFRJX/OKk70rsMIM5H23crfc1wSEnJvHlxgQBS1HPpV/VYmjC8bIInKWhnB4Gaw32MnyQ==}
+  /vitest/0.8.5_jsdom@19.0.0:
+    resolution: {integrity: sha512-UOBAfyLUn9++isUDC5vk8joLcaBZj7esLS2Yx3GZSRMWzayOfEEzU1Iv4SBb4HkJun9e1D5ifZoSclhNHKn7IA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
