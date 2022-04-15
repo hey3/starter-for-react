@@ -47,10 +47,10 @@
   },
   "devDependencies": {
     "@stylelint/postcss-css-in-js": "0.37.2",
-    "@storybook/addon-a11y": "6.4.21",
-    "@storybook/addon-essentials": "6.4.21",
+    "@storybook/addon-a11y": "6.4.22",
+    "@storybook/addon-essentials": "6.4.22",
     "@storybook/builder-vite": "0.1.28",
-    "@storybook/react": "6.4.21",
+    "@storybook/react": "6.4.22",
     "@storybook/testing-react": "1.2.4",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "12.1.4",
