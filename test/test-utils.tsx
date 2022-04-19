@@ -6,7 +6,7 @@ type Props = {
 }
 
 const AllTheProviders: FC<Props> = ({ children }) => {
-  // Add Custom Provides like a Theme Provider.
+  // Add Custom Providers like a Theme Provider.
   return <>{children}</>
 }
 
