@@ -1,7 +1,11 @@
 import { render, RenderOptions, RenderResult } from '@testing-library/react'
-import { FC, ReactElement } from 'react'
+import { FC, ReactElement, ReactNode } from 'react'
 
-const AllTheProviders: FC = ({ children }) => {
+type Props = {
+  children: ReactNode
+}
+
+const AllTheProviders: FC<Props> = ({ children }) => {
   // Add Custom Provides like a Theme Provider.
   return <>{children}</>
 }
