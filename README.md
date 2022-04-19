@@ -31,7 +31,7 @@ This application make active usage of
 
 ## License
 
-[MIT License](https://github.com/hey3/starter-for-react/blob/master/LICENSE)
+[MIT License](https://github.com/hey3/starter-for-react/blob/main/LICENSE)
 
 ## Author
 
