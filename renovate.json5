@@ -12,22 +12,12 @@
   vulnerabilityAlerts: {
     labels: ['security'],
   },
-  enabledManagers: ['npm'],
+  enabledManagers: ['npm', 'github-actions'],
   separateMinorPatch: true,
   patch: {
     automerge: true,
   },
   packageRules: [
-    {
-      groupName: 'Lint families',
-      matchPackageNames: ['eslint', 'prettier', 'stylelint', 'postcss-syntax'],
-      matchPackagePatterns: ['^eslint-', '^@typescript-eslint', '^stylelint-', '@stylelint/'],
-    },
-    {
-      groupName: 'Test families',
-      matchPackageNames: ['vitest', 'jsdom'],
-      matchPackagePatterns: ['^@testing-library'],
-    },
     {
       groupName: 'Typescript',
       matchPackageNames: ['typescript'],
@@ -41,12 +31,34 @@
       matchPackageNames: ['react-router-dom'],
     },
     {
-      groupName: 'Storybook families',
-      matchPackagePatterns: ['^@storybook'],
+      groupName: 'Styling families',
+      matchPackageNames: ['styled-components', '@types/styled-components'],
     },
     {
-      groupName: 'Styled-components families',
-      matchPackageNames: ['styled-components', '@types/styled-components'],
+      groupName: 'ESLint families',
+      matchPackageNames: ['eslint'],
+      matchPackagePatterns: ['^eslint', '^@typescript-eslint'],
+    },
+    {
+      groupName: 'StyleLink families',
+      matchPackageNames: ['stylelint', 'postcss-syntax'],
+      matchPackagePatterns: ['^stylelint', '^@stylelint'],
+    },
+    {
+      groupName: 'Formatter families',
+      matchPackageNames: ['prettier'],
+    },
+    {
+      groupName: 'Test families',
+      matchPackageNames: ['vitest', 'jsdom'],
+    },
+    {
+      groupName: 'Test Utility families',
+      matchPackagePatterns: ['^@testing-library'],
+    },
+    {
+      groupName: 'Storybook families',
+      matchPackagePatterns: ['^@storybook'],
     },
     {
       groupName: 'Builder families',
