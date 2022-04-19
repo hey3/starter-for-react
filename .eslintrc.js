@@ -27,6 +27,7 @@ module.exports = {
         'plugin:import/typescript',
         'eslint-config-prettier',
       ],
+      plugins: ['unused-imports'],
       rules: {
         'import/export': 'off',
         'import/order': [
@@ -36,6 +37,7 @@ module.exports = {
             alphabetize: { order: 'asc', caseInsensitive: true },
           },
         ],
+        'unused-imports/no-unused-imports': 'error',
         'react/prop-types': 'off',
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/no-unused-vars': ['error'],
