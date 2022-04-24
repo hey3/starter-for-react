@@ -30,7 +30,7 @@ specifiers:
   react-dom: 18.0.0
   react-router-dom: 6.3.0
   styled-components: 5.3.5
-  stylelint: 14.5.3
+  stylelint: 14.7.1
   stylelint-config-prettier: 9.0.3
   stylelint-config-recess-order: 3.0.0
   stylelint-config-standard: 25.0.0
@@ -71,10 +71,10 @@ devDependencies:
   jsdom: 19.0.0
   postcss-syntax: 0.36.2
   prettier: 2.6.2
-  stylelint: 14.5.3
-  stylelint-config-prettier: 9.0.3_stylelint@14.5.3
-  stylelint-config-recess-order: 3.0.0_stylelint@14.5.3
-  stylelint-config-standard: 25.0.0_stylelint@14.5.3
+  stylelint: 14.7.1
+  stylelint-config-prettier: 9.0.3_stylelint@14.7.1
+  stylelint-config-recess-order: 3.0.0_stylelint@14.7.1
+  stylelint-config-standard: 25.0.0_stylelint@14.7.1
   stylelint-config-styled-components: 0.1.1
   typescript: 4.6.3
   vite: 2.9.5
@@ -2280,7 +2280,7 @@ packages:
       escodegen: 2.0.0
       fast-deep-equal: 3.1.3
       global: 4.4.0
-      html-tags: 3.1.0
+      html-tags: 3.2.0
       js-string-escape: 1.0.1
       loader-utils: 2.0.2
       lodash: 4.17.21
@@ -7665,8 +7665,8 @@ packages:
       terser: 4.8.0
     dev: true
 
-  /html-tags/3.1.0:
-    resolution: {integrity: sha512-1qYz89hW3lFDEazhjW0yVAV87lw8lVkrJocr72XmBkMKsoSVJCQx3W8BXsC7hO2qAt8BoVjYjtAcZ9perqGnNg==}
+  /html-tags/3.2.0:
+    resolution: {integrity: sha512-vy7ClnArOZwCnqZgvv+ddgHgJiAFXe3Ge9ML5/mBctVJoUoYPCdxVucOywjDARn6CVoh3dRSFdPHy2sX80L0Wg==}
     engines: {node: '>=8'}
     dev: true
 
@@ -11259,58 +11259,58 @@ packages:
       supports-color: 5.5.0
     dev: false
 
-  /stylelint-config-prettier/9.0.3_stylelint@14.5.3:
+  /stylelint-config-prettier/9.0.3_stylelint@14.7.1:
     resolution: {integrity: sha512-5n9gUDp/n5tTMCq1GLqSpA30w2sqWITSSEiAWQlpxkKGAUbjcemQ0nbkRvRUa0B1LgD3+hCvdL7B1eTxy1QHJg==}
     engines: {node: '>= 12'}
     hasBin: true
     peerDependencies:
       stylelint: '>=11.0.0'
     dependencies:
-      stylelint: 14.5.3
+      stylelint: 14.7.1
     dev: true
 
-  /stylelint-config-recess-order/3.0.0_stylelint@14.5.3:
+  /stylelint-config-recess-order/3.0.0_stylelint@14.7.1:
     resolution: {integrity: sha512-uNXrlDz570Q7HJlrq8mNjgfO/xlKIh2hKVKEFMTG1/ih/6tDLcTbuvO1Zoo2dnQay990OAkWLDpTDOorB+hmBw==}
     peerDependencies:
       stylelint: '>=14'
     dependencies:
-      stylelint: 14.5.3
-      stylelint-order: 5.0.0_stylelint@14.5.3
+      stylelint: 14.7.1
+      stylelint-order: 5.0.0_stylelint@14.7.1
     dev: true
 
-  /stylelint-config-recommended/7.0.0_stylelint@14.5.3:
+  /stylelint-config-recommended/7.0.0_stylelint@14.7.1:
     resolution: {integrity: sha512-yGn84Bf/q41J4luis1AZ95gj0EQwRX8lWmGmBwkwBNSkpGSpl66XcPTulxGa/Z91aPoNGuIGBmFkcM1MejMo9Q==}
     peerDependencies:
       stylelint: ^14.4.0
     dependencies:
-      stylelint: 14.5.3
+      stylelint: 14.7.1
     dev: true
 
-  /stylelint-config-standard/25.0.0_stylelint@14.5.3:
+  /stylelint-config-standard/25.0.0_stylelint@14.7.1:
     resolution: {integrity: sha512-21HnP3VSpaT1wFjFvv9VjvOGDtAviv47uTp3uFmzcN+3Lt+RYRv6oAplLaV51Kf792JSxJ6svCJh/G18E9VnCA==}
     peerDependencies:
       stylelint: ^14.4.0
     dependencies:
-      stylelint: 14.5.3
-      stylelint-config-recommended: 7.0.0_stylelint@14.5.3
+      stylelint: 14.7.1
+      stylelint-config-recommended: 7.0.0_stylelint@14.7.1
     dev: true
 
   /stylelint-config-styled-components/0.1.1:
     resolution: {integrity: sha512-z5Xz/9GmvxO6e/DLzBMwkB85zHxEEjN6K7Cj80Bi+o/9vR9eS3GX3E9VuMnX9WLFYulqbqLtTapGGY28JBiy9Q==}
     dev: true
 
-  /stylelint-order/5.0.0_stylelint@14.5.3:
+  /stylelint-order/5.0.0_stylelint@14.7.1:
     resolution: {integrity: sha512-OWQ7pmicXufDw5BlRqzdz3fkGKJPgLyDwD1rFY3AIEfIH/LQY38Vu/85v8/up0I+VPiuGRwbc2Hg3zLAsJaiyw==}
     peerDependencies:
       stylelint: ^14.0.0
     dependencies:
       postcss: 8.4.12
       postcss-sorting: 7.0.1_postcss@8.4.12
-      stylelint: 14.5.3
+      stylelint: 14.7.1
     dev: true
 
-  /stylelint/14.5.3:
-    resolution: {integrity: sha512-omHETL+kGHR+fCXFK1SkZD/A+emCP9esggAdWEl8GPjTNeyRYj+H6uetRDcU+7E451zwWiUYGVAX+lApsAZgsQ==}
+  /stylelint/14.7.1:
+    resolution: {integrity: sha512-rUOWm67hrzGXXyO/cInENEejF4urh1dLgOb9cr/3XLDb/t/A+rXQp3p6+no8o8QCKTgBUdhVUq/bXMgE988PJw==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -11327,7 +11327,7 @@ packages:
       global-modules: 2.0.0
       globby: 11.1.0
       globjoin: 0.1.4
-      html-tags: 3.1.0
+      html-tags: 3.2.0
       ignore: 5.2.0
       import-lazy: 4.0.0
       imurmurhash: 0.1.4
