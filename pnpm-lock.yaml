@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@storybook/addon-a11y': 6.4.22
   '@storybook/addon-essentials': 6.4.22
-  '@storybook/builder-vite': 0.1.30
+  '@storybook/builder-vite': 0.1.32
   '@storybook/react': 6.4.22
   '@storybook/testing-react': 1.2.4
   '@stylelint/postcss-css-in-js': 0.37.2
@@ -36,7 +36,7 @@ specifiers:
   stylelint-config-standard: 25.0.0
   stylelint-config-styled-components: 0.1.1
   typescript: 4.6.3
-  vite: 2.9.5
+  vite: 2.9.6
   vitest: 0.9.4
 
 dependencies:
@@ -48,7 +48,7 @@ dependencies:
 devDependencies:
   '@storybook/addon-a11y': 6.4.22_8fc472ebaf0018fcdf7cf55b2750c96e
   '@storybook/addon-essentials': 6.4.22_04c390f5b74938b90ee9743937e3601e
-  '@storybook/builder-vite': 0.1.30_a21c862d9ea0574c986a16c612f466cd
+  '@storybook/builder-vite': 0.1.32_a70c7e1ec893075c8e0688f45edff9df
   '@storybook/react': 6.4.22_bd7070d1fe703e7e54735cc803f16795
   '@storybook/testing-react': 1.2.4_c0383076ee13f8c14266ae0c9cf59a20
   '@stylelint/postcss-css-in-js': 0.37.2_postcss-syntax@0.36.2
@@ -77,7 +77,7 @@ devDependencies:
   stylelint-config-standard: 25.0.0_stylelint@14.7.1
   stylelint-config-styled-components: 0.1.1
   typescript: 4.6.3
-  vite: 2.9.5
+  vite: 2.9.6
   vitest: 0.9.4_jsdom@19.0.0
 
 packages:
@@ -1888,7 +1888,7 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@joshwooding/vite-plugin-react-docgen-typescript/0.0.4_typescript@4.6.3+vite@2.9.5:
+  /@joshwooding/vite-plugin-react-docgen-typescript/0.0.4_typescript@4.6.3+vite@2.9.6:
     resolution: {integrity: sha512-ezL7SU//1OV4Oyt/zQ3CsX8uLujVEYUHuULkqgcW6wOuQfRnvgkn99HZtLWwS257GmZVwszGQzhL7VE3PbMAYw==}
     peerDependencies:
       typescript: '>= 4.3.x'
@@ -1899,7 +1899,7 @@ packages:
       magic-string: 0.26.1
       react-docgen-typescript: 2.2.2_typescript@4.6.3
       typescript: 4.6.3
-      vite: 2.9.5
+      vite: 2.9.6
     dev: true
 
   /@jridgewell/resolve-uri/3.0.5:
@@ -2526,13 +2526,13 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook/builder-vite/0.1.30_a21c862d9ea0574c986a16c612f466cd:
-    resolution: {integrity: sha512-6Qf7IVZxEg3l18xXm0iqsGyG/T0ixeE8gU8zAo2u8wuEYCGNsQrnbu6it8BOXTJFk3gLPPETvxGszVIP56gRtA==}
+  /@storybook/builder-vite/0.1.32_a70c7e1ec893075c8e0688f45edff9df:
+    resolution: {integrity: sha512-/5dF4PNOIfgIdusKCt/8h7ZKzwkhwTpZsjM6IMgGxbv1J4OMy4JaOABL+rIssPGLjTHDmv3nvCm9ei6JkLSFzg==}
     peerDependencies:
       '@storybook/core-common': ^6.4.3
       vite: '>=2.6.7'
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.0.4_typescript@4.6.3+vite@2.9.5
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.0.4_typescript@4.6.3+vite@2.9.6
       '@mdx-js/mdx': 1.6.22
       '@storybook/csf-tools': 6.4.22
       '@storybook/source-loader': 6.4.22_react-dom@18.0.0+react@18.0.0
@@ -2544,8 +2544,8 @@ packages:
       magic-string: 0.26.1
       react-docgen: 6.0.0-alpha.2
       slash: 3.0.0
-      vite: 2.9.5
-      vite-plugin-mdx: 3.5.10_@mdx-js+mdx@1.6.22+vite@2.9.5
+      vite: 2.9.6
+      vite-plugin-mdx: 3.5.10_@mdx-js+mdx@1.6.22+vite@2.9.6
     transitivePeerDependencies:
       - react
       - react-dom
@@ -12083,7 +12083,7 @@ packages:
       vfile-message: 2.0.4
     dev: true
 
-  /vite-plugin-mdx/3.5.10_@mdx-js+mdx@1.6.22+vite@2.9.5:
+  /vite-plugin-mdx/3.5.10_@mdx-js+mdx@1.6.22+vite@2.9.6:
     resolution: {integrity: sha512-tfGNRwkO23pln9EYqhbsOLEx9Qot5+enl+727gop7+HGEoC87+88hLRWGL+FU/It1Y0a5P3OAyDbTKKHX6tEJw==}
     peerDependencies:
       '@mdx-js/mdx': '*'
@@ -12094,11 +12094,11 @@ packages:
       esbuild: 0.13.8
       resolve: 1.22.0
       unified: 9.2.2
-      vite: 2.9.5
+      vite: 2.9.6
     dev: true
 
-  /vite/2.9.5:
-    resolution: {integrity: sha512-dvMN64X2YEQgSXF1lYabKXw3BbN6e+BL67+P3Vy4MacnY+UzT1AfkHiioFSi9+uiDUiaDy7Ax/LQqivk6orilg==}
+  /vite/2.9.6:
+    resolution: {integrity: sha512-3IffdrByHW95Yjv0a13TQOQfJs7L5dVlSPuTt432XLbRMriWbThqJN2k/IS6kXn5WY4xBLhK9XoaWay1B8VzUw==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
@@ -12147,7 +12147,7 @@ packages:
       local-pkg: 0.4.1
       tinypool: 0.1.2
       tinyspy: 0.3.2
-      vite: 2.9.5
+      vite: 2.9.6
     transitivePeerDependencies:
       - less
       - sass
