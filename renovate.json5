@@ -40,7 +40,7 @@
       matchPackagePatterns: ['^eslint', '^@typescript-eslint'],
     },
     {
-      groupName: 'StyleLink families',
+      groupName: 'StyleLint families',
       matchPackageNames: ['stylelint', 'postcss-syntax'],
       matchPackagePatterns: ['^stylelint', '^@stylelint'],
     },
