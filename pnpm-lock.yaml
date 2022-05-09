@@ -8,7 +8,7 @@ specifiers:
   '@storybook/testing-react': 1.2.4
   '@stylelint/postcss-css-in-js': 0.37.3
   '@testing-library/jest-dom': 5.16.4
-  '@testing-library/react': 13.1.1
+  '@testing-library/react': 13.2.0
   '@testing-library/user-event': 14.1.1
   '@types/node': 16.11.33
   '@types/react': 18.0.9
@@ -54,7 +54,7 @@ devDependencies:
   '@storybook/testing-react': 1.2.4_ya4da5xocp4mcqtgvygjz5m2ea
   '@stylelint/postcss-css-in-js': 0.37.3_postcss-syntax@0.36.2
   '@testing-library/jest-dom': 5.16.4
-  '@testing-library/react': 13.1.1_zpnidt7m3osuk7shl3s4oenomq
+  '@testing-library/react': 13.2.0_zpnidt7m3osuk7shl3s4oenomq
   '@testing-library/user-event': 14.1.1
   '@types/node': 16.11.33
   '@types/react': 18.0.9
@@ -3395,8 +3395,8 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react/13.1.1_zpnidt7m3osuk7shl3s4oenomq:
-    resolution: {integrity: sha512-8mirlAa0OKaUvnqnZF6MdAh2tReYA2KtWVw1PKvaF5EcCZqgK5pl8iF+3uW90JdG5Ua2c2c2E2wtLdaug3dsVg==}
+  /@testing-library/react/13.2.0_zpnidt7m3osuk7shl3s4oenomq:
+    resolution: {integrity: sha512-Bprbz/SZVONCJy5f7hcihNCv313IJXdYiv0nSJklIs1SQCIHHNlnGNkosSXnGZTmesyGIcBGNppYhXcc11pb7g==}
     engines: {node: '>=12'}
     peerDependencies:
       react: ^18.0.0
