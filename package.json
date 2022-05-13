@@ -79,7 +79,7 @@
     "stylelint-config-styled-components": "0.1.1",
     "typescript": "4.6.4",
     "vite": "2.9.9",
-    "vitest": "0.12.1"
+    "vitest": "0.12.6"
   },
   "dependenciesComments": {
     "@storybook/addon-a11y": [
