@@ -8,9 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     name: lint and compile
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - uses: ./.github/actions/setup
+      - name: Setup
+        uses: ./.github/actions/setup
 
       - name: Run lint
         run: |
