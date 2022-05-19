@@ -62,7 +62,7 @@
     },
     {
       groupName: 'Builder families',
-      matchPackageNames: ['vite', '@vitejs/plugin-react', '@storybook/builder-vite'],
+      matchPackageNames: ['vite', '@vitejs/plugin-react'],
     },
   ],
 }
