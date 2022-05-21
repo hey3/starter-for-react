@@ -37,7 +37,7 @@
     "build-storybook": "build-storybook",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "test:virtual-update": "vitest run -u",
+    "test:virtual-update": "vitest run --update",
     "typecheck": "tsc --project tsconfig.json --pretty --noEmit --incremental false"
   },
   "dependencies": {
