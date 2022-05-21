@@ -35,8 +35,8 @@
     "lint:style-fix": "stylelint --fix 'src/**/*.ts{,x}'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "vitest run --passWithNoTests",
-    "test:coverage": "vitest run --passWithNoTests --coverage",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
     "test:virtual-update": "vitest run -u",
     "typecheck": "tsc --project tsconfig.json --pretty --noEmit --incremental false"
   },
