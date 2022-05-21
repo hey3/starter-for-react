@@ -1,5 +1,5 @@
 module.exports = {
-  addons: ['@storybook/addon-essentials'],
+  addons: ['@storybook/addon-a11y', '@storybook/addon-essentials'],
   stories: ['../src/**/*.stories.tsx'],
   staticDirs: ['../public'],
   core: {
