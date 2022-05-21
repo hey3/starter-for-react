@@ -81,9 +81,5 @@
     "vite": "2.9.9",
     "vitest": "0.12.8"
   },
-  "dependenciesComments": {
-    "@storybook/addon-a11y": [
-      "Not yet available in storybook-builder-vite"
-    ]
-  }
+  "dependenciesComments": {}
 }
