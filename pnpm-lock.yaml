@@ -37,7 +37,7 @@ specifiers:
   stylelint-config-styled-components: 0.1.1
   typescript: 4.7.2
   vite: 2.9.9
-  vitest: 0.12.9
+  vitest: 0.12.10
 
 dependencies:
   react: 18.1.0
@@ -78,7 +78,7 @@ devDependencies:
   stylelint-config-styled-components: 0.1.1
   typescript: 4.7.2
   vite: 2.9.9
-  vitest: 0.12.9_jsdom@19.0.0
+  vitest: 0.12.10_jsdom@19.0.0
 
 packages:
 
@@ -8216,7 +8216,7 @@ packages:
     dev: true
 
   /get-func-name/2.0.0:
-    resolution: {integrity: sha1-6td0q+5y4gQJQzoGY2YCPdaIekE=}
+    resolution: {integrity: sha512-Hm0ixYtaSZ/V7C8FJrtZIuBBI+iSgL+1Aq82zSu8VQNB4S3Gk8e7Qs3VwBDJAhmRZcFqkl3tQu36g/Foh5I5ig==}
     dev: true
 
   /get-intrinsic/1.1.1:
@@ -13289,8 +13289,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.12.9_jsdom@19.0.0:
-    resolution: {integrity: sha512-1NtyUANS72Qw5PwYvoztk067NX4fSiis2xQxhByOWS33eL2er/yupHyLxlBCOkF2ANe0dLFRvT1GVb+nczL5aw==}
+  /vitest/0.12.10_jsdom@19.0.0:
+    resolution: {integrity: sha512-TVoI6fM7rZ1zIMDjcviY8Dg5XIaPqBwDweaI3oUwvWqUz68cbM49CIHNMkF+UVoSjl94wXiBRdNhsT4ekgWuGA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
