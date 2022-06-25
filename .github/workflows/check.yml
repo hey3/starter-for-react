@@ -3,10 +3,12 @@ name: Check
 on:
   pull_request:
     branch: ['*', '!main']
+
 jobs:
   check:
-    runs-on: ubuntu-latest
     name: lint and compile
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Checkout
         uses: actions/checkout@v3
