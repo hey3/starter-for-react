@@ -9,7 +9,7 @@ specifiers:
   '@stylelint/postcss-css-in-js': 0.38.0
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 13.3.0
-  '@testing-library/user-event': 14.2.5
+  '@testing-library/user-event': 14.2.6
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
   '@types/styled-components': 5.1.25
@@ -54,7 +54,7 @@ devDependencies:
   '@stylelint/postcss-css-in-js': 0.38.0_postcss-syntax@0.36.2
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 13.3.0_biqbaboplfbrettd7655fr4n2y
-  '@testing-library/user-event': 14.2.5
+  '@testing-library/user-event': 14.2.6
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
   '@types/styled-components': 5.1.25
@@ -4143,8 +4143,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: true
 
-  /@testing-library/user-event/14.2.5:
-    resolution: {integrity: sha512-xcSw47H8JidxQPAqPlHp4l51EYJx+2TlHgYBW9i+noNlgUMMrhgtefnrWcpZ1k9ep6SMhJVyx3N7F4tIKTuJ9w==}
+  /@testing-library/user-event/14.2.6:
+    resolution: {integrity: sha512-l/4W4x3Lm24wkWNkPasXqvEzG+a6n2X872XCUjhyfbNqcoOapaWyCxC5Fz+E4r7JPu8gysQKSSCrK0OO2x+D+A==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
