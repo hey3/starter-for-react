@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@storybook/addon-a11y': 6.5.9
   '@storybook/addon-essentials': 6.5.9
-  '@storybook/builder-vite': 0.2.0
+  '@storybook/builder-vite': 0.2.2
   '@storybook/react': 6.5.9
   '@storybook/testing-react': 1.3.0
   '@stylelint/postcss-css-in-js': 0.38.0
@@ -48,7 +48,7 @@ dependencies:
 devDependencies:
   '@storybook/addon-a11y': 6.5.9_biqbaboplfbrettd7655fr4n2y
   '@storybook/addon-essentials': 6.5.9_4lh2t7x4c6vf3ubvrfnyjyabzq
-  '@storybook/builder-vite': 0.2.0_n5rkhuiivmeqqcwz4mhjs2bb3a
+  '@storybook/builder-vite': 0.2.2_m7hmn2znaxng3sol2pifalwguu
   '@storybook/react': 6.5.9_4lh2t7x4c6vf3ubvrfnyjyabzq
   '@storybook/testing-react': 1.3.0_za4wzpqzku43ewvak7n22w3ahu
   '@stylelint/postcss-css-in-js': 0.38.0_postcss-syntax@0.36.2
@@ -2573,12 +2573,13 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@joshwooding/vite-plugin-react-docgen-typescript/0.0.4_v3wns4mmlyy7olg3wbdj3skgpq:
-    resolution: {integrity: sha512-ezL7SU//1OV4Oyt/zQ3CsX8uLujVEYUHuULkqgcW6wOuQfRnvgkn99HZtLWwS257GmZVwszGQzhL7VE3PbMAYw==}
+  /@joshwooding/vite-plugin-react-docgen-typescript/0.0.5_v3wns4mmlyy7olg3wbdj3skgpq:
+    resolution: {integrity: sha512-HwAEj/vAP1+hzBfIv9DTCyg+1O0/LG48Up7j1RmJ+pFwjb/wRxzUBco4LqKFKe7SZ0M6IyASNh1oKP3yHnJElA==}
     peerDependencies:
       typescript: '>= 4.3.x'
       vite: '>2.0.0-0'
     dependencies:
+      '@rollup/pluginutils': 4.2.1
       glob: 7.2.3
       glob-promise: 4.2.2_glob@7.2.3
       magic-string: 0.26.2
@@ -2751,6 +2752,14 @@ packages:
       schema-utils: 3.1.1
       source-map: 0.7.4
       webpack: 5.73.0
+    dev: true
+
+  /@rollup/pluginutils/4.2.1:
+    resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
+    engines: {node: '>= 8.0.0'}
+    dependencies:
+      estree-walker: 2.0.2
+      picomatch: 2.3.1
     dev: true
 
   /@sinclair/typebox/0.23.5:
@@ -3167,19 +3176,20 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook/builder-vite/0.2.0_n5rkhuiivmeqqcwz4mhjs2bb3a:
-    resolution: {integrity: sha512-sh6oCqkAnXgo+4bBI3UZ/b2T7LbRePjBnjUJNmHK3CkycnZbXJFQyr1ESzwd1vOpHTSkWbRhDEsV8fl8HbL0iA==}
+  /@storybook/builder-vite/0.2.2_m7hmn2znaxng3sol2pifalwguu:
+    resolution: {integrity: sha512-kFY/Rbk+Bu5KmXOCP8CMxp6gfbNGGyNZwikWZe21NHcrVzwHg/aTs+MR37maRqlWcpJvTZmbkKMHak0+vDqpvw==}
     peerDependencies:
-      '@storybook/core-common': '>=6.4.3 || >=6.5.0-alpha.0'
       '@storybook/mdx2-csf': ^0.0.3
-      '@storybook/node-logger': '>=6.4.3 || >=6.5.0-alpha.0'
-      vite: '>=3.0.0-alpha || >= 3.0.0'
+      vite: '>= 3.0.0'
     peerDependenciesMeta:
       '@storybook/mdx2-csf':
         optional: true
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.0.4_v3wns4mmlyy7olg3wbdj3skgpq
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.0.5_v3wns4mmlyy7olg3wbdj3skgpq
+      '@rollup/pluginutils': 4.2.1
+      '@storybook/core-common': 6.5.9_4lh2t7x4c6vf3ubvrfnyjyabzq
       '@storybook/mdx1-csf': 0.0.4_react@18.2.0
+      '@storybook/node-logger': 6.5.9
       '@storybook/source-loader': 6.5.9_biqbaboplfbrettd7655fr4n2y
       '@vitejs/plugin-react': 2.0.0_vite@3.0.2
       ast-types: 0.14.2
@@ -3193,10 +3203,14 @@ packages:
       vite: 3.0.2
     transitivePeerDependencies:
       - '@babel/core'
+      - eslint
       - react
       - react-dom
       - supports-color
       - typescript
+      - vue-template-compiler
+      - webpack-cli
+      - webpack-command
     dev: true
 
   /@storybook/builder-webpack4/6.5.9_4lh2t7x4c6vf3ubvrfnyjyabzq:
@@ -7547,6 +7561,10 @@ packages:
       - supports-color
     dev: true
 
+  /estree-walker/2.0.2:
+    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
+    dev: true
+
   /esutils/2.0.3:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
@@ -9623,7 +9641,7 @@ packages:
     dev: true
 
   /lodash.uniq/4.5.0:
-    resolution: {integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=}
+    resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}
     dev: true
 
   /lodash/4.17.21:
@@ -12808,7 +12826,7 @@ packages:
     dev: true
 
   /trim/0.0.1:
-    resolution: {integrity: sha1-WFhUf2spB1fulczMZm+1AITEYN0=}
+    resolution: {integrity: sha512-YzQV+TZg4AxpKxaTHK3c3D+kRDCGVEE7LemdlQZoQXn0iennk10RsIoY6ikzAqJTc9Xjl9C1/waHom/J86ziAQ==}
     dev: true
 
   /trough/1.0.5:
