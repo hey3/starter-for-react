@@ -37,7 +37,7 @@ specifiers:
   stylelint-config-styled-components: 0.1.1
   typescript: 4.7.4
   vite: 3.0.4
-  vitest: 0.18.1
+  vitest: 0.19.1
 
 dependencies:
   react: 18.2.0
@@ -78,7 +78,7 @@ devDependencies:
   stylelint-config-styled-components: 0.1.1
   typescript: 4.7.4
   vite: 3.0.4
-  vitest: 0.18.1_jsdom@20.0.0
+  vitest: 0.19.1_jsdom@20.0.0
 
 packages:
 
@@ -13279,18 +13279,21 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.18.1_jsdom@20.0.0:
-    resolution: {integrity: sha512-4F/1K/Vn4AvJwe7i2YblR02PT5vMKcw9KN4unDq2KD0YcSxX0B/6D6Qu9PJaXwVuxXMFTQ5ovd4+CQaW3bwofA==}
+  /vitest/0.19.1_jsdom@20.0.0:
+    resolution: {integrity: sha512-E/ZXpFMUahn731wzhMBNzWRp4mGgiZFT0xdHa32cbNO0CSaHpE9hTfteEU247Gi2Dula8uXo5vvrNB6dtszmQA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
       '@edge-runtime/vm': '*'
+      '@vitest/browser': '*'
       '@vitest/ui': '*'
       c8: '*'
       happy-dom: '*'
       jsdom: '*'
     peerDependenciesMeta:
       '@edge-runtime/vm':
+        optional: true
+      '@vitest/browser':
         optional: true
       '@vitest/ui':
         optional: true
