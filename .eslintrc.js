@@ -13,11 +13,12 @@ module.exports = {
   plugins: ['unused-imports'],
   rules: {
     'import/export': 'off',
+    'import/newline-after-import': 'error',
     'import/order': [
       'error',
       {
-        groups: ['builtin', 'external', 'internal', 'parent', 'index', 'object', 'type'],
-        alphabetize: { order: 'asc', caseInsensitive: true },
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
+        alphabetize: { order: 'asc' },
       },
     ],
     'unused-imports/no-unused-imports': 'error',
