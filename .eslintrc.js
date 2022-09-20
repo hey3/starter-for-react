@@ -64,6 +64,13 @@ module.exports = {
       },
     },
     {
+      files: ['.storybook/main.ts'],
+      rules: {
+        // storybook main.ts is CommonJS.
+        '@typescript-eslint/no-var-requires': ['off'],
+      },
+    },
+    {
       files: ['**'],
       extends: ['prettier'],
     },
