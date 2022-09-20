@@ -1,5 +1,6 @@
-import { render, RenderOptions, RenderResult } from '@testing-library/react'
-import { FC, ReactElement, ReactNode } from 'react'
+import { render } from '@testing-library/react'
+import type { RenderOptions, RenderResult } from '@testing-library/react'
+import type { FC, ReactElement, ReactNode } from 'react'
 
 type Props = {
   children: ReactNode
