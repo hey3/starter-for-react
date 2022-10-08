@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@storybook/addon-a11y': 6.5.12
   '@storybook/addon-essentials': 6.5.12
-  '@storybook/builder-vite': 0.2.3
+  '@storybook/builder-vite': 0.2.4
   '@storybook/react': 6.5.12
   '@storybook/testing-react': 1.3.0
   '@stylelint/postcss-css-in-js': 0.38.0
@@ -48,7 +48,7 @@ dependencies:
 devDependencies:
   '@storybook/addon-a11y': 6.5.12_biqbaboplfbrettd7655fr4n2y
   '@storybook/addon-essentials': 6.5.12_bpdzbxechq3aomdd4bwtqda7we
-  '@storybook/builder-vite': 0.2.3_3uthnqzkngb3eemblospowtvbm
+  '@storybook/builder-vite': 0.2.4_3uthnqzkngb3eemblospowtvbm
   '@storybook/react': 6.5.12_bpdzbxechq3aomdd4bwtqda7we
   '@storybook/testing-react': 1.3.0_ddf76e27b4pxu5xxoqvvrn4iue
   '@stylelint/postcss-css-in-js': 0.38.0_postcss-syntax@0.36.2
@@ -3315,8 +3315,8 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook/builder-vite/0.2.3_3uthnqzkngb3eemblospowtvbm:
-    resolution: {integrity: sha512-qoYLMscM8ih7rYS9vU6WER2ADW28dB/3/TPg/27Q/shJM3yy/++us62arWAa3TJoFx1cB2MhAqhJGYyNH09wuQ==}
+  /@storybook/builder-vite/0.2.4_3uthnqzkngb3eemblospowtvbm:
+    resolution: {integrity: sha512-SYAIheTva4Dpqi7Xs+H6oqPOpVA3xu+1k+OnLPKfgR6sVEnLHvPKn80n3NOKdqXoXkO0ou9OVnZaS2A55vnx+A==}
     peerDependencies:
       '@storybook/mdx2-csf': ^0.0.3
       '@sveltejs/vite-plugin-svelte': ^1.0.0
