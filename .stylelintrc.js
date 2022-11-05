@@ -1,29 +1,32 @@
 module.exports = {
   extends: [
     'stylelint-config-standard',
-    'stylelint-config-styled-components',
     'stylelint-config-recess-order',
     'stylelint-config-prettier',
   ],
+  ignoreFiles: ['src/styles/reset.css'],
   rules: {
-    'alpha-value-notation': 'number',
-    'color-hex-length': 'long',
-    'function-name-case': [
-      'lower',
+    'keyframes-name-pattern': [
+      '^[a-z][a-zA-Z0-9]+$',
       {
-        ignoreFunctions: [/.*/],
+        message: 'Expected keyframe name to be lowerCamelCase',
       },
     ],
-    'function-no-unknown': null,
-    'no-descending-specificity': true,
-    'value-keyword-case': [
-      'lower',
+    'property-no-unknown': [
+      true,
       {
-        ignoreKeywords: [/.*/],
-        ignoreProperties: [/.*/],
-        ignoreFunctions: [/.*/],
+        ignoreProperties: [
+          // CSS Modules composition
+          // https://github.com/css-modules/css-modules#composition
+          'composes',
+        ],
+      },
+    ],
+    'selector-class-pattern': [
+      '^[a-z][a-zA-Z0-9]+$',
+      {
+        message: 'Expected class selector to be lowerCamelCase',
       },
     ],
   },
-  customSyntax: '@stylelint/postcss-css-in-js',
 }

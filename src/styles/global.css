@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--global-font-family-base);
+}
+
+:root {
+  --global-font-family-base: 'Helvetica Neue', arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+    meiryo, sans-serif;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}
