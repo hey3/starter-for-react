@@ -19,7 +19,6 @@ This application make active usage of
 
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [styled-components](https://styled-components.com/)
 - [vite](https://ja.vitejs.dev/)
 - [vitest](https://vitest.dev/)
 - [testing-library](https://testing-library.com/docs/react-testing-library/intro/)
