@@ -1,14 +1,14 @@
 import { render } from '@testing-library/react'
 import type { RenderOptions, RenderResult } from '@testing-library/react'
 import type { FC, ReactElement, ReactNode } from 'react'
+import { ThemeProvider } from '../src/stores/ThemeStore'
 
 type Props = {
   children: ReactNode
 }
 
 const AllTheProviders: FC<Props> = ({ children }) => {
-  // Add Custom Providers like a Theme Provider.
-  return <>{children}</>
+  return <ThemeProvider>{children}</ThemeProvider>
 }
 
 const customRender = (ui: ReactElement, options?: Omit<RenderOptions, 'wrapper'>): RenderResult =>
