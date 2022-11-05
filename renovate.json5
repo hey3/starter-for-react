@@ -31,18 +31,13 @@
       matchPackageNames: ['react-router-dom'],
     },
     {
-      groupName: 'Styling families',
-      matchPackageNames: ['styled-components', '@types/styled-components'],
-    },
-    {
       groupName: 'ESLint families',
       matchPackageNames: ['eslint'],
       matchPackagePatterns: ['^eslint', '^@typescript-eslint'],
     },
     {
       groupName: 'StyleLint families',
-      matchPackageNames: ['stylelint', 'postcss-syntax'],
-      matchPackagePatterns: ['^stylelint', '^@stylelint'],
+      matchPackagePatterns: ['^stylelint'],
     },
     {
       groupName: 'Formatter families',
