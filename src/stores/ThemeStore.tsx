@@ -55,7 +55,7 @@ export const useThemeStore = (): ThemeContext => {
   const themeContext = useContext(ThemeContext)
 
   if (!themeContext) {
-    throw new Error(`Need to pass a value to the context`)
+    throw new Error('Need to pass a value to the context')
   }
 
   return themeContext
