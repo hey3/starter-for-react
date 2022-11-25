@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/hey3/starter-for-react.git"
   },
-  "packageManager": "pnpm@7.16.1",
+  "packageManager": "pnpm@7.17.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
