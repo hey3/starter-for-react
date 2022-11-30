@@ -36,8 +36,8 @@
     "lint:eslint-fix": "eslint . --fix --ext .js,.ts,.tsx",
     "lint:style": "stylelint 'src/**/*.css'",
     "lint:style-fix": "stylelint --fix 'src/**/*.css'",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
+    "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider build-storybook",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:virtual-update": "vitest run --update",
@@ -79,5 +79,7 @@
     "vite": "3.2.4",
     "vitest": "0.25.3"
   },
-  "dependenciesComments": {}
+  "dependenciesComments": {
+    "storybook": "maybe need --openssl-legacy-provider until v7 if node18"
+  }
 }
