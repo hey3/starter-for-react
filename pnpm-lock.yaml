@@ -31,7 +31,7 @@ specifiers:
   stylelint-config-recess-order: 3.1.0
   stylelint-config-standard: 29.0.0
   typescript: 4.9.4
-  vite: 4.0.3
+  vite: 4.0.4
   vitest: 0.26.2
 
 dependencies:
@@ -42,7 +42,7 @@ dependencies:
 devDependencies:
   '@storybook/addon-a11y': 6.5.15_biqbaboplfbrettd7655fr4n2y
   '@storybook/addon-essentials': 6.5.15_ezwbcwsuf2bqvxzlg3s7mwruqi
-  '@storybook/builder-vite': 0.2.6_jtopulvun7nhqqmdla5kjduxri
+  '@storybook/builder-vite': 0.2.6_4cmw6m2s2rchi6mx3ysgremmyy
   '@storybook/react': 6.5.15_ezwbcwsuf2bqvxzlg3s7mwruqi
   '@storybook/testing-react': 1.3.0_n4g2pl43ufnb2vr76byrcxqfmu
   '@testing-library/jest-dom': 5.16.5
@@ -52,7 +52,7 @@ devDependencies:
   '@types/react-dom': 18.0.10
   '@typescript-eslint/eslint-plugin': 5.48.0_k73wpmdolxikpyqun3p36akaaq
   '@typescript-eslint/parser': 5.48.0_iukboom6ndih5an6iafl45j2fe
-  '@vitejs/plugin-react-swc': 3.0.1_vite@4.0.3
+  '@vitejs/plugin-react-swc': 3.0.1_vite@4.0.4
   eslint: 8.31.0
   eslint-config-prettier: 8.6.0_eslint@8.31.0
   eslint-plugin-import: 2.26.0_m2kn7xiag5lymyarkgri27ztxm
@@ -67,7 +67,7 @@ devDependencies:
   stylelint-config-recess-order: 3.1.0_stylelint@14.16.1
   stylelint-config-standard: 29.0.0_stylelint@14.16.1
   typescript: 4.9.4
-  vite: 4.0.3
+  vite: 4.0.4
   vitest: 0.26.2_jsdom@20.0.3
 
 packages:
@@ -2774,7 +2774,7 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@joshwooding/vite-plugin-react-docgen-typescript/0.0.5_p2fwcaxbionflq6hjivvbcsv5a:
+  /@joshwooding/vite-plugin-react-docgen-typescript/0.0.5_gl4qsmwzp7wy5uclz4tx77gbli:
     resolution: {integrity: sha512-HwAEj/vAP1+hzBfIv9DTCyg+1O0/LG48Up7j1RmJ+pFwjb/wRxzUBco4LqKFKe7SZ0M6IyASNh1oKP3yHnJElA==}
     peerDependencies:
       typescript: '>= 4.3.x'
@@ -2786,7 +2786,7 @@ packages:
       magic-string: 0.26.7
       react-docgen-typescript: 2.2.2_typescript@4.9.4
       typescript: 4.9.4
-      vite: 4.0.3
+      vite: 4.0.4
     dev: true
 
   /@jridgewell/gen-mapping/0.1.1:
@@ -3388,7 +3388,7 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook/builder-vite/0.2.6_jtopulvun7nhqqmdla5kjduxri:
+  /@storybook/builder-vite/0.2.6_4cmw6m2s2rchi6mx3ysgremmyy:
     resolution: {integrity: sha512-TwlqJykq5KfM8SmDXWQtUHrYg4XySxwOe3RKud4iGZDYmqPc/ayB9XSF6DR50WgC7gKK7WIVIN+ZcGPphy5zWg==}
     peerDependencies:
       '@storybook/mdx2-csf': ^0.0.3
@@ -3406,13 +3406,13 @@ packages:
       vue-docgen-api:
         optional: true
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.0.5_p2fwcaxbionflq6hjivvbcsv5a
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.0.5_gl4qsmwzp7wy5uclz4tx77gbli
       '@storybook/core-common': 6.5.15_ezwbcwsuf2bqvxzlg3s7mwruqi
       '@storybook/mdx1-csf': 0.0.4_react@18.2.0
       '@storybook/node-logger': 6.5.15
       '@storybook/semver': 7.3.2
       '@storybook/source-loader': 6.5.15_biqbaboplfbrettd7655fr4n2y
-      '@vitejs/plugin-react': 2.2.0_vite@4.0.3
+      '@vitejs/plugin-react': 2.2.0_vite@4.0.4
       ast-types: 0.14.2
       es-module-lexer: 0.9.3
       glob: 7.2.3
@@ -3421,7 +3421,7 @@ packages:
       react-docgen: 6.0.0-alpha.3
       slash: 3.0.0
       sveltedoc-parser: 4.2.1
-      vite: 4.0.3
+      vite: 4.0.4
     transitivePeerDependencies:
       - '@babel/core'
       - eslint
@@ -4860,16 +4860,16 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-react-swc/3.0.1_vite@4.0.3:
+  /@vitejs/plugin-react-swc/3.0.1_vite@4.0.4:
     resolution: {integrity: sha512-3GQ2oruZO9j8dSHcI0MUeOZQBhjYyDQsF/pKY4Px+CJxn0M16OhgFeEzUjeuwci4zhhjoNIDE9aFNaV5GMQ09g==}
     peerDependencies:
       vite: ^4
     dependencies:
       '@swc/core': 1.3.24
-      vite: 4.0.3
+      vite: 4.0.4
     dev: true
 
-  /@vitejs/plugin-react/2.2.0_vite@4.0.3:
+  /@vitejs/plugin-react/2.2.0_vite@4.0.4:
     resolution: {integrity: sha512-FFpefhvExd1toVRlokZgxgy2JtnBOdp4ZDsq7ldCWaqGSGn9UhWMAVm/1lxPL14JfNS5yGz+s9yFrQY6shoStA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -4882,7 +4882,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.20.7
       magic-string: 0.26.7
       react-refresh: 0.14.0
-      vite: 4.0.3
+      vite: 4.0.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -13389,7 +13389,7 @@ packages:
       pathe: 0.2.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.0.3_@types+node@18.11.18
+      vite: 4.0.4_@types+node@18.11.18
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -13400,8 +13400,8 @@ packages:
       - terser
     dev: true
 
-  /vite/4.0.3:
-    resolution: {integrity: sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA==}
+  /vite/4.0.4:
+    resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -13433,8 +13433,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/4.0.3_@types+node@18.11.18:
-    resolution: {integrity: sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA==}
+  /vite/4.0.4_@types+node@18.11.18:
+    resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -13503,7 +13503,7 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
-      vite: 4.0.3_@types+node@18.11.18
+      vite: 4.0.4_@types+node@18.11.18
       vite-node: 0.26.2_@types+node@18.11.18
     transitivePeerDependencies:
       - less
