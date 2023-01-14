@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@storybook/addon-a11y': 6.5.15
   '@storybook/addon-essentials': 6.5.15
-  '@storybook/builder-vite': 0.2.6
+  '@storybook/builder-vite': 0.2.7
   '@storybook/react': 6.5.15
   '@storybook/testing-react': 1.3.0
   '@testing-library/jest-dom': 5.16.5
@@ -42,7 +42,7 @@ dependencies:
 devDependencies:
   '@storybook/addon-a11y': 6.5.15_biqbaboplfbrettd7655fr4n2y
   '@storybook/addon-essentials': 6.5.15_ezwbcwsuf2bqvxzlg3s7mwruqi
-  '@storybook/builder-vite': 0.2.6_4cmw6m2s2rchi6mx3ysgremmyy
+  '@storybook/builder-vite': 0.2.7_4cmw6m2s2rchi6mx3ysgremmyy
   '@storybook/react': 6.5.15_ezwbcwsuf2bqvxzlg3s7mwruqi
   '@storybook/testing-react': 1.3.0_n4g2pl43ufnb2vr76byrcxqfmu
   '@testing-library/jest-dom': 5.16.5
@@ -773,7 +773,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.20.2
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.12.9
       '@babel/plugin-transform-parameters': 7.20.7_@babel+core@7.12.9
     dev: true
@@ -3388,8 +3388,8 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook/builder-vite/0.2.6_4cmw6m2s2rchi6mx3ysgremmyy:
-    resolution: {integrity: sha512-TwlqJykq5KfM8SmDXWQtUHrYg4XySxwOe3RKud4iGZDYmqPc/ayB9XSF6DR50WgC7gKK7WIVIN+ZcGPphy5zWg==}
+  /@storybook/builder-vite/0.2.7_4cmw6m2s2rchi6mx3ysgremmyy:
+    resolution: {integrity: sha512-IvgInn1dsL4amHn8IDHWv2KaoWyRWxGQvHvctfHl7ayN8fke6Tzg8lBUxVoGBfqeoO3glo/zsVUUO+aNeUUlxQ==}
     peerDependencies:
       '@storybook/mdx2-csf': ^0.0.3
       '@sveltejs/vite-plugin-svelte': ^1.0.0
