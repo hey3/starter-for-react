@@ -23,7 +23,7 @@
   "engines": {
     "node": "18.x"
   },
-  "packageManager": "pnpm@7.25.1",
+  "packageManager": "pnpm@7.27.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
