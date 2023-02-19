@@ -1,11 +1,8 @@
 module.exports = {
-  extends: [
-    'stylelint-config-standard',
-    'stylelint-config-recess-order',
-    'stylelint-config-prettier',
-  ],
+  extends: ['stylelint-config-standard', 'stylelint-config-recess-order'],
   ignoreFiles: ['src/styles/reset.css'],
   rules: {
+    'declaration-property-value-no-unknown': true,
     'keyframes-name-pattern': [
       '^[a-z][a-zA-Z0-9]+$',
       {
