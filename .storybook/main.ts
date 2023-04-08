@@ -1,11 +1,13 @@
-module.exports = {
+import type { StorybookConfig } from '@storybook/react-vite'
+
+const config: StorybookConfig = {
   addons: ['@storybook/addon-a11y', '@storybook/addon-essentials'],
   stories: ['../src'],
   staticDirs: ['../public'],
-  core: {
-    builder: '@storybook/builder-vite',
-  },
-  async viteFinal(config) {
-    return config
+  framework: {
+    name: '@storybook/react-vite',
+    options: {},
   },
 }
+
+export default config

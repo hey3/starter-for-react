@@ -9,7 +9,7 @@ module.exports = {
     sourceType: 'module',
   },
   ignorePatterns: ['node_modules/*', '!.storybook'],
-  extends: ['eslint:recommended', 'plugin:import/recommended'],
+  extends: ['eslint:recommended', 'plugin:import/recommended', 'plugin:storybook/recommended'],
   plugins: ['unused-imports'],
   rules: {
     'import/export': 'off',
@@ -18,7 +18,9 @@ module.exports = {
       'error',
       {
         groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
-        alphabetize: { order: 'asc' },
+        alphabetize: {
+          order: 'asc',
+        },
       },
     ],
     'unused-imports/no-unused-imports': 'error',
@@ -34,7 +36,11 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.[jt]sx'],
-      settings: { react: { version: 'detect' } },
+      settings: {
+        react: {
+          version: 'detect',
+        },
+      },
       env: {
         browser: true,
       },
@@ -61,13 +67,6 @@ module.exports = {
             allowConciseArrowFunctionExpressionsStartingWithVoid: true,
           },
         ],
-      },
-    },
-    {
-      files: ['.storybook/main.ts'],
-      rules: {
-        // storybook main.ts is CommonJS.
-        '@typescript-eslint/no-var-requires': ['off'],
       },
     },
     {
