@@ -8,7 +8,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  ignorePatterns: ['node_modules/*', '!.storybook'],
+  ignorePatterns: ['node_modules/*', '!.storybook', 'dist'],
   extends: ['eslint:recommended', 'plugin:import/recommended', 'plugin:storybook/recommended'],
   plugins: ['unused-imports'],
   rules: {

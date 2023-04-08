@@ -9,7 +9,7 @@ const preview: Preview = {
     Story => {
       // Reset theme for each story.
       window.document.documentElement.setAttribute('data-theme', 'light')
-      window.localStorage.clear()
+      window.localStorage.setItem('theme', 'light')
 
       return (
         <ThemeProvider>
