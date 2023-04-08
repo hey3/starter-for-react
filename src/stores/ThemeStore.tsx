@@ -15,6 +15,10 @@ type ThemeProviderProps = {
 }
 
 export const ThemeProvider = ({ children }: ThemeProviderProps): JSX.Element => {
+  const [activeTheme, setActiveTheme] = useState<Theme>(
+    window.document.documentElement.getAttribute('data-theme') as Theme
+  )
+
   useLayoutEffect(() => {
     let theme: Theme
     const savedTheme = window.localStorage.getItem('theme') as Theme
@@ -23,12 +27,9 @@ export const ThemeProvider = ({ children }: ThemeProviderProps): JSX.Element => 
     } else {
       theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
     }
+    setActiveTheme(theme)
     window.document.documentElement.setAttribute('data-theme', theme)
   }, [])
-
-  const [activeTheme, setActiveTheme] = useState<Theme>(
-    window.document.documentElement.getAttribute('data-theme') as Theme
-  )
 
   const inactiveTheme: Theme = activeTheme === 'light' ? 'dark' : 'light'
 
