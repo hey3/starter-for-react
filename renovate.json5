@@ -53,11 +53,12 @@
     },
     {
       groupName: 'Storybook families',
+      matchPackageNames: ['storybook'],
       matchPackagePatterns: ['^@storybook'],
     },
     {
       groupName: 'Builder families',
-      matchPackageNames: ['vite', '@vitejs/plugin-react'],
+      matchPackageNames: ['vite', '@vitejs/plugin-react-swc'],
     },
   ],
 }
