@@ -73,8 +73,8 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0(@typescript-eslint/eslint-plugin@5.59.6)(eslint@8.41.0)
   jsdom:
-    specifier: 21.1.2
-    version: 21.1.2
+    specifier: 22.0.0
+    version: 22.0.0
   prettier:
     specifier: 2.8.8
     version: 2.8.8
@@ -98,7 +98,7 @@ devDependencies:
     version: 4.3.8(@types/node@18.15.11)
   vitest:
     specifier: 0.31.1
-    version: 0.31.1(jsdom@21.1.2)
+    version: 0.31.1(jsdom@22.0.0)
 
 packages:
 
@@ -3438,13 +3438,6 @@ packages:
       negotiator: 0.6.3
     dev: true
 
-  /acorn-globals@7.0.1:
-    resolution: {integrity: sha512-umOSDSDrfHbTNPuNpC2NSnnA3LUrqpevPb4T9jRx4MagXNS0rs+gwiTcAvqCRmsD6utzsrzNt+ebm00SNWiC3Q==}
-    dependencies:
-      acorn: 8.8.2
-      acorn-walk: 8.2.0
-    dev: true
-
   /acorn-jsx@5.3.2(acorn@7.4.1):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -6313,9 +6306,9 @@ packages:
       - supports-color
     dev: true
 
-  /jsdom@21.1.2:
-    resolution: {integrity: sha512-sCpFmK2jv+1sjff4u7fzft+pUh2KSUbUrEHYHyfSIbGTIcmnjyp83qg6qLwdJ/I3LpTXx33ACxeRL7Lsyc6lGQ==}
-    engines: {node: '>=14'}
+  /jsdom@22.0.0:
+    resolution: {integrity: sha512-p5ZTEb5h+O+iU02t0GfEjAnkdYPrQSkfuTSMkMYyIoMvUNEHsbG0bHHbfXIcfTqD2UfvjQX7mmgiFsyRwGscVw==}
+    engines: {node: '>=16'}
     peerDependencies:
       canvas: ^2.5.0
     peerDependenciesMeta:
@@ -6323,13 +6316,10 @@ packages:
         optional: true
     dependencies:
       abab: 2.0.6
-      acorn: 8.8.2
-      acorn-globals: 7.0.1
       cssstyle: 3.0.0
       data-urls: 4.0.0
       decimal.js: 10.4.3
       domexception: 4.0.0
-      escodegen: 2.0.0
       form-data: 4.0.0
       html-encoding-sniffer: 3.0.0
       http-proxy-agent: 5.0.0
@@ -8844,7 +8834,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest@0.31.1(jsdom@21.1.2):
+  /vitest@0.31.1(jsdom@22.0.0):
     resolution: {integrity: sha512-/dOoOgzoFk/5pTvg1E65WVaobknWREN15+HF+0ucudo3dDG/vCZoXTQrjIfEaWvQXmqScwkRodrTbM/ScMpRcQ==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -8889,7 +8879,7 @@ packages:
       chai: 4.3.7
       concordance: 5.0.4
       debug: 4.3.4
-      jsdom: 21.1.2
+      jsdom: 22.0.0
       local-pkg: 0.4.3
       magic-string: 0.30.0
       pathe: 1.1.0
