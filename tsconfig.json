@@ -1,12 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
-    "types": ["react", "vite/client", "vitest/globals"],
-    "typeRoots": ["node_modules/@types", "src/types"],
+    "types": ["vite/client", "vitest/globals"],
     "strict": true,
     "exactOptionalPropertyTypes": true,
     "esModuleInterop": true,
