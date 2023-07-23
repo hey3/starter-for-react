@@ -70,7 +70,7 @@
     "eslint-plugin-storybook": "0.6.13",
     "eslint-plugin-unused-imports": "2.0.0",
     "jsdom": "22.1.0",
-    "prettier": "2.8.8",
+    "prettier": "3.0.0",
     "storybook": "7.0.27",
     "stylelint": "15.10.2",
     "stylelint-config-recess-order": "4.3.0",
