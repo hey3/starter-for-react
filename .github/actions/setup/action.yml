@@ -9,7 +9,7 @@ runs:
         node-version-file: 'package.json'
 
     - name: Install pnpm
-      uses: pnpm/action-setup@v2.2.4
+      uses: pnpm/action-setup@v2.4.0
       id: pnpm-install
 
     - name: Setup pnpm cache
