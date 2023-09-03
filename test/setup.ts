@@ -1,5 +1,4 @@
-import '@testing-library/jest-dom'
-import { beforeEach } from 'vitest'
+import '@testing-library/jest-dom/vitest'
 
 // Mock for theme.
 Object.defineProperty(window, 'matchMedia', {
