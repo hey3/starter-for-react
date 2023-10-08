@@ -1,4 +1,4 @@
-import type { Preview } from '@storybook/react'
+import { type Preview } from '@storybook/react'
 import React from 'react'
 import { ThemeProvider } from '../src/stores/ThemeStore'
 import '../src/styles/reset.css'

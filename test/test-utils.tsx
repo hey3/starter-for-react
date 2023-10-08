@@ -1,6 +1,5 @@
-import { render } from '@testing-library/react'
-import type { RenderOptions, RenderResult } from '@testing-library/react'
-import type { FC, ReactElement, ReactNode } from 'react'
+import { render, type RenderOptions, type RenderResult } from '@testing-library/react'
+import { type FC, type ReactElement, type ReactNode } from 'react'
 import { ThemeProvider } from '../src/stores/ThemeStore'
 
 type Props = {
