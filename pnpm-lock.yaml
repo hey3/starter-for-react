@@ -80,8 +80,8 @@ devDependencies:
     specifier: 23.0.1
     version: 23.0.1
   prettier:
-    specifier: 3.1.1
-    version: 3.1.1
+    specifier: 3.2.5
+    version: 3.2.5
   storybook:
     specifier: 7.4.6
     version: 7.4.6
@@ -8050,8 +8050,8 @@ packages:
     hasBin: true
     dev: true
 
-  /prettier@3.1.1:
-    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
