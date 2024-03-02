@@ -49,10 +49,10 @@
     "react-router-dom": "6.21.3"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "7.4.6",
-    "@storybook/addon-essentials": "7.4.6",
-    "@storybook/react": "7.4.6",
-    "@storybook/react-vite": "7.4.6",
+    "@storybook/addon-a11y": "7.6.17",
+    "@storybook/addon-essentials": "7.6.17",
+    "@storybook/react": "7.6.17",
+    "@storybook/react-vite": "7.6.17",
     "@testing-library/jest-dom": "6.1.6",
     "@testing-library/react": "14.1.2",
     "@testing-library/user-event": "14.5.2",
@@ -71,7 +71,7 @@
     "eslint-plugin-unused-imports": "3.0.0",
     "jsdom": "23.0.1",
     "prettier": "3.1.1",
-    "storybook": "7.4.6",
+    "storybook": "7.6.17",
     "stylelint": "16.1.0",
     "stylelint-config-recess-order": "4.4.0",
     "stylelint-config-standard": "36.0.0",
