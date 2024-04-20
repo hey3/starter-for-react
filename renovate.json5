@@ -32,8 +32,8 @@
     },
     {
       groupName: 'ESLint families',
-      matchPackageNames: ['eslint'],
-      matchPackagePatterns: ['^eslint', '^@typescript-eslint'],
+      matchPackageNames: ['eslint', 'typescript-eslint', 'globals'],
+      matchPackagePatterns: ['^eslint', '^@eslint'],
     },
     {
       groupName: 'StyleLint families',
