@@ -73,7 +73,7 @@
     "prettier": "3.2.5",
     "storybook": "7.4.6",
     "stylelint": "16.3.1",
-    "stylelint-config-recess-order": "4.6.0",
+    "stylelint-config-recess-order": "5.0.1",
     "stylelint-config-standard": "36.0.0",
     "typescript": "5.4.5",
     "vite": "4.5.3",

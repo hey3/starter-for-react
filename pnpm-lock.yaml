@@ -91,8 +91,8 @@ importers:
         specifier: 16.3.1
         version: 16.3.1(typescript@5.4.5)
       stylelint-config-recess-order:
-        specifier: 4.6.0
-        version: 4.6.0(stylelint@16.3.1(typescript@5.4.5))
+        specifier: 5.0.1
+        version: 5.0.1(stylelint@16.3.1(typescript@5.4.5))
       stylelint-config-standard:
         specifier: 36.0.0
         version: 36.0.0(stylelint@16.3.1(typescript@5.4.5))
@@ -4661,10 +4661,10 @@ packages:
   strip-literal@1.3.0:
     resolution: {integrity: sha512-PugKzOsyXpArk0yWmUwqOZecSO0GH0bPoctLcqNDH9J04pVW3lflYE0ujElBGTloevcxF5MofAOZ7C5l2b+wLg==}
 
-  stylelint-config-recess-order@4.6.0:
-    resolution: {integrity: sha512-V76fhv3YtcNXh/hyAuAdSzi5FmcrG54Mp2AThJ3D/PTMTSYzUPd7GIhP6z9mTqnRhmkk6YTfcu/JWB8h+Yrcaw==}
+  stylelint-config-recess-order@5.0.1:
+    resolution: {integrity: sha512-rKbGkoa3h0rINrGln9TFVowvSCLgPJC5O0EuPiqlqWcJMb1lImEtXktcjFCVz+hwtSUiHD3ijJc3vP9muFOgJg==}
     peerDependencies:
-      stylelint: '>=15'
+      stylelint: '>=16'
 
   stylelint-config-recommended@14.0.0:
     resolution: {integrity: sha512-jSkx290CglS8StmrLp2TxAppIajzIBZKYm3IxT89Kg6fGlxbPiTiyH9PS5YUuVAFwaJLl1ikiXX0QWjI0jmgZQ==}
@@ -10008,9 +10008,9 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-sorting@8.0.2(postcss@8.4.35):
+  postcss-sorting@8.0.2(postcss@8.4.38):
     dependencies:
-      postcss: 8.4.35
+      postcss: 8.4.38
 
   postcss-value-parser@4.2.0: {}
 
@@ -10637,7 +10637,7 @@ snapshots:
     dependencies:
       acorn: 8.11.3
 
-  stylelint-config-recess-order@4.6.0(stylelint@16.3.1(typescript@5.4.5)):
+  stylelint-config-recess-order@5.0.1(stylelint@16.3.1(typescript@5.4.5)):
     dependencies:
       stylelint: 16.3.1(typescript@5.4.5)
       stylelint-order: 6.0.4(stylelint@16.3.1(typescript@5.4.5))
@@ -10653,8 +10653,8 @@ snapshots:
 
   stylelint-order@6.0.4(stylelint@16.3.1(typescript@5.4.5)):
     dependencies:
-      postcss: 8.4.35
-      postcss-sorting: 8.0.2(postcss@8.4.35)
+      postcss: 8.4.38
+      postcss-sorting: 8.0.2(postcss@8.4.38)
       stylelint: 16.3.1(typescript@5.4.5)
 
   stylelint@16.3.1(typescript@5.4.5):
