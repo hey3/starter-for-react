@@ -71,7 +71,7 @@
     "eslint-plugin-storybook": "0.8.0",
     "eslint-plugin-unused-imports": "3.2.0",
     "globals": "14.0.0",
-    "jsdom": "24.1.0",
+    "jsdom": "24.1.1",
     "prettier": "3.3.2",
     "storybook": "8.2.6",
     "stylelint": "16.7.0",
