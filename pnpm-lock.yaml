@@ -91,14 +91,14 @@ importers:
         specifier: 8.2.7
         version: 8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2))
       stylelint:
-        specifier: 16.7.0
-        version: 16.7.0(typescript@5.5.4)
+        specifier: 16.8.1
+        version: 16.8.1(typescript@5.5.4)
       stylelint-config-recess-order:
         specifier: 5.0.1
-        version: 5.0.1(stylelint@16.7.0(typescript@5.5.4))
+        version: 5.0.1(stylelint@16.8.1(typescript@5.5.4))
       stylelint-config-standard:
         specifier: 36.0.1
-        version: 36.0.1(stylelint@16.7.0(typescript@5.5.4))
+        version: 36.0.1(stylelint@16.8.1(typescript@5.5.4))
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -3723,8 +3723,8 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
 
-  stylelint@16.7.0:
-    resolution: {integrity: sha512-Q1ATiXlz+wYr37a7TGsfvqYn2nSR3T/isw3IWlZQzFzCNoACHuGBb6xBplZXz56/uDRJHIygxjh7jbV/8isewA==}
+  stylelint@16.8.1:
+    resolution: {integrity: sha512-O8aDyfdODSDNz/B3gW2HQ+8kv8pfhSu7ZR7xskQ93+vI6FhKKGUJMQ03Ydu+w3OvXXE0/u4hWU4hCPNOyld+OA==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -8268,27 +8268,27 @@ snapshots:
     dependencies:
       js-tokens: 9.0.0
 
-  stylelint-config-recess-order@5.0.1(stylelint@16.7.0(typescript@5.5.4)):
+  stylelint-config-recess-order@5.0.1(stylelint@16.8.1(typescript@5.5.4)):
     dependencies:
-      stylelint: 16.7.0(typescript@5.5.4)
-      stylelint-order: 6.0.4(stylelint@16.7.0(typescript@5.5.4))
+      stylelint: 16.8.1(typescript@5.5.4)
+      stylelint-order: 6.0.4(stylelint@16.8.1(typescript@5.5.4))
 
-  stylelint-config-recommended@14.0.1(stylelint@16.7.0(typescript@5.5.4)):
+  stylelint-config-recommended@14.0.1(stylelint@16.8.1(typescript@5.5.4)):
     dependencies:
-      stylelint: 16.7.0(typescript@5.5.4)
+      stylelint: 16.8.1(typescript@5.5.4)
 
-  stylelint-config-standard@36.0.1(stylelint@16.7.0(typescript@5.5.4)):
+  stylelint-config-standard@36.0.1(stylelint@16.8.1(typescript@5.5.4)):
     dependencies:
-      stylelint: 16.7.0(typescript@5.5.4)
-      stylelint-config-recommended: 14.0.1(stylelint@16.7.0(typescript@5.5.4))
+      stylelint: 16.8.1(typescript@5.5.4)
+      stylelint-config-recommended: 14.0.1(stylelint@16.8.1(typescript@5.5.4))
 
-  stylelint-order@6.0.4(stylelint@16.7.0(typescript@5.5.4)):
+  stylelint-order@6.0.4(stylelint@16.8.1(typescript@5.5.4)):
     dependencies:
       postcss: 8.4.40
       postcss-sorting: 8.0.2(postcss@8.4.40)
-      stylelint: 16.7.0(typescript@5.5.4)
+      stylelint: 16.8.1(typescript@5.5.4)
 
-  stylelint@16.7.0(typescript@5.5.4):
+  stylelint@16.8.1(typescript@5.5.4):
     dependencies:
       '@csstools/css-parser-algorithms': 2.7.1(@csstools/css-tokenizer@2.4.1)
       '@csstools/css-tokenizer': 2.4.1
