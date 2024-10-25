@@ -59,7 +59,7 @@
     "@testing-library/jest-dom": "6.5.0",
     "@testing-library/react": "16.0.1",
     "@testing-library/user-event": "14.5.2",
-    "@types/react": "18.3.11",
+    "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "@vitejs/plugin-react-swc": "3.7.1",
     "eslint": "9.12.0",
