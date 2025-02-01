@@ -21,7 +21,7 @@
     "url": "git+https://github.com/hey3/starter-for-react.git"
   },
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "packageManager": "pnpm@9.15.4",
   "type": "module",
