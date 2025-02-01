@@ -33,6 +33,12 @@ const configBase = typescriptEslint.config(js.configs.recommended, {
         considerComments: true,
       },
     ],
+    'import/no-unresolved': [
+      'error',
+      {
+        ignore: ['react-router/dom'],
+      },
+    ],
     'import/order': [
       'error',
       {
