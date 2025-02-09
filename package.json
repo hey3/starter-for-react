@@ -71,7 +71,7 @@
     "eslint-plugin-unused-imports": "4.1.4",
     "globals": "15.14.0",
     "jsdom": "26.0.0",
-    "prettier": "3.4.2",
+    "prettier": "3.5.0",
     "storybook": "8.5.3",
     "stylelint": "16.14.1",
     "stylelint-config-recess-order": "6.0.0",
