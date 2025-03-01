@@ -23,7 +23,7 @@
   "engines": {
     "node": "22.x"
   },
-  "packageManager": "pnpm@9.15.5",
+  "packageManager": "pnpm@9.15.6",
   "type": "module",
   "scripts": {
     "dev": "vite",
