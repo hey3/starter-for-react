@@ -5,6 +5,7 @@ import {
   useEffect,
   useLayoutEffect,
   useState,
+  type JSX,
   type ReactNode,
 } from 'react'
 
