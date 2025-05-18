@@ -9,8 +9,8 @@ body {
 }
 
 :root {
-  --global-font-family-base: 'Helvetica Neue', arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
-    meiryo, sans-serif;
+  --global-font-family-base:
+    'Helvetica Neue', arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', meiryo, sans-serif;
 }
 
 :root[data-theme='light'] {
