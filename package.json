@@ -61,7 +61,7 @@
     "@testing-library/user-event": "14.6.1",
     "@types/react": "18.3.21",
     "@types/react-dom": "18.3.7",
-    "@vitejs/plugin-react-swc": "3.7.2",
+    "@vitejs/plugin-react-swc": "3.9.0",
     "eslint": "9.27.0",
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-import": "2.31.0",
@@ -78,7 +78,7 @@
     "stylelint-config-standard": "38.0.0",
     "typescript": "5.8.3",
     "typescript-eslint": "8.32.1",
-    "vite": "6.1.6",
+    "vite": "6.3.5",
     "vitest": "3.0.9"
   }
 }
