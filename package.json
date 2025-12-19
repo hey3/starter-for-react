@@ -61,7 +61,7 @@
     "@testing-library/user-event": "14.6.1",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
-    "@vitejs/plugin-react-swc": "3.9.0",
+    "@vitejs/plugin-react-swc": "4.2.2",
     "eslint": "9.27.0",
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-import": "2.31.0",
