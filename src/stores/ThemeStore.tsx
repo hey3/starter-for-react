@@ -4,6 +4,7 @@ import {
   useContext,
   useEffect,
   useLayoutEffect,
+  useRef,
   useState,
   type JSX,
   type ReactNode,
@@ -26,17 +27,19 @@ export const ThemeProvider = ({ children }: ThemeProviderProps): JSX.Element => 
   const [activeTheme, setActiveTheme] = useState<Theme>(
     window.document.documentElement.getAttribute('data-theme') as Theme
   )
+  const initialThemeRef = useRef<Theme>(null)
 
   useLayoutEffect(() => {
-    let theme: Theme
     const savedTheme = window.localStorage.getItem('theme') as Theme
     if (savedTheme) {
-      theme = savedTheme
+      initialThemeRef.current = savedTheme
     } else {
-      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      initialThemeRef.current = window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark'
+        : 'light'
     }
-    setActiveTheme(theme)
-    window.document.documentElement.setAttribute('data-theme', theme)
+    setActiveTheme(initialThemeRef.current)
+    window.document.documentElement.setAttribute('data-theme', initialThemeRef.current)
   }, [])
 
   const inactiveTheme: Theme = activeTheme === 'light' ? 'dark' : 'light'

@@ -21,9 +21,9 @@
     "url": "git+https://github.com/hey3/starter-for-react.git"
   },
   "engines": {
-    "node": "22.x"
+    "node": "24.x"
   },
-  "packageManager": "pnpm@10.12.4",
+  "packageManager": "pnpm@10.33.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -45,40 +45,40 @@
     "typecheck": "tsc --project tsconfig.json --pretty --noEmit --incremental false"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "react-router": "7.6.3"
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "react-router": "7.14.2"
   },
   "devDependencies": {
-    "@eslint/js": "9.27.0",
-    "@storybook/addon-a11y": "8.6.14",
-    "@storybook/addon-essentials": "8.6.14",
-    "@storybook/react": "8.6.14",
-    "@storybook/react-vite": "8.6.14",
+    "@eslint/js": "9.39.4",
+    "@storybook/addon-a11y": "10.3.5",
+    "@storybook/react": "10.3.5",
+    "@storybook/react-vite": "10.3.5",
     "@testing-library/dom": "10.4.0",
-    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/jest-dom": "6.9.1",
     "@testing-library/react": "16.3.0",
     "@testing-library/user-event": "14.6.1",
-    "@types/react": "19.1.8",
-    "@types/react-dom": "19.1.6",
-    "@vitejs/plugin-react-swc": "3.9.0",
-    "eslint": "9.27.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.1",
+    "eslint": "9.39.4",
     "eslint-config-prettier": "10.1.5",
+    "eslint-import-resolver-typescript": "4.4.4",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-react-hooks": "5.2.0",
-    "eslint-plugin-unused-imports": "4.1.4",
-    "globals": "16.1.0",
-    "jsdom": "26.1.0",
-    "prettier": "3.5.3",
-    "storybook": "8.6.17",
-    "stylelint": "16.19.1",
-    "stylelint-config-recess-order": "6.0.0",
-    "stylelint-config-standard": "38.0.0",
-    "typescript": "5.8.3",
-    "typescript-eslint": "8.32.1",
-    "vite": "6.3.6",
-    "vitest": "3.1.4"
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-unused-imports": "4.4.1",
+    "globals": "17.5.0",
+    "jsdom": "29.0.2",
+    "prettier": "3.8.3",
+    "storybook": "10.3.5",
+    "stylelint": "17.8.0",
+    "stylelint-config-recess-order": "7.7.0",
+    "stylelint-config-standard": "40.0.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.59.0",
+    "vite": "8.0.9",
+    "vitest": "4.1.5"
   }
 }
