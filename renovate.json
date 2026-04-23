@@ -1,5 +1,12 @@
 {
-  "extends": ["config:base"],
+  "extends": [
+    ":dependencyDashboard",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":ignoreModulesAndTests",
+    "replacements:all",
+    "workarounds:all",
+    "customManagers:githubActionsVersions"
+  ],
   "timezone": "Asia/Tokyo",
   "schedule": ["every weekend"],
   "lockFileMaintenance": {
@@ -17,6 +24,7 @@
   "patch": {
     "automerge": true
   },
+  "minimumReleaseAge": "7 days",
   "packageRules": [
     {
       "groupName": "Typescript",
@@ -32,12 +40,11 @@
     },
     {
       "groupName": "ESLint families",
-      "matchPackageNames": ["eslint", "typescript-eslint", "globals"],
-      "matchPackagePatterns": ["^eslint", "^@eslint"]
+      "matchPackageNames": ["eslint", "typescript-eslint", "globals", "/^eslint/", "/^@eslint/"]
     },
     {
       "groupName": "StyleLint families",
-      "matchPackagePatterns": ["^stylelint"]
+      "matchPackageNames": ["/^stylelint/"]
     },
     {
       "groupName": "Formatter families",
@@ -49,12 +56,11 @@
     },
     {
       "groupName": "Test Utility families",
-      "matchPackagePatterns": ["^@testing-library"]
+      "matchPackageNames": ["/^@testing-library/"]
     },
     {
       "groupName": "Storybook families",
-      "matchPackageNames": ["storybook"],
-      "matchPackagePatterns": ["^@storybook"]
+      "matchPackageNames": ["storybook", "/^@storybook/"]
     },
     {
       "groupName": "Builder families",
