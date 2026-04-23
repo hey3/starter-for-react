@@ -33,12 +33,7 @@ const configBase = typescriptEslint.config(js.configs.recommended, {
         considerComments: true,
       },
     ],
-    'import/no-unresolved': [
-      'error',
-      {
-        ignore: ['react-router/dom'],
-      },
-    ],
+    'import/no-unresolved': ['error'],
     'import/order': [
       'error',
       {
@@ -63,6 +58,13 @@ const configTypescript = typescriptEslint.config(
       ...pluginImport.configs.typescript.settings,
       'import/parsers': {
         '@typescript-eslint/parser': ['.js', '.jsx', '.ts', '.tsx'],
+      },
+      'import/resolver': {
+        typescript: {
+          alwaysTryTypes: true,
+          project: './tsconfig.json',
+        },
+        node: true,
       },
     },
     rules: {
