@@ -4,7 +4,7 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
-    "types": ["vite/client", "vitest/globals"],
+    "types": ["vite/client", "vitest/globals", "vitest/config"],
     "strict": true,
     "exactOptionalPropertyTypes": true,
     "esModuleInterop": true,
