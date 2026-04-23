@@ -1,0 +1,64 @@
+{
+  "extends": ["config:base"],
+  "timezone": "Asia/Tokyo",
+  "schedule": ["every weekend"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "schedule": ["before 3am on the first day of the month"]
+  },
+  "labels": ["renovate"],
+  "commitMessagePrefix": "ci: ",
+  "vulnerabilityAlerts": {
+    "labels": ["security"]
+  },
+  "enabledManagers": ["npm", "github-actions"],
+  "separateMinorPatch": true,
+  "patch": {
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "groupName": "Typescript",
+      "matchPackageNames": ["typescript"]
+    },
+    {
+      "groupName": "React families",
+      "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"]
+    },
+    {
+      "groupName": "Routing families",
+      "matchPackageNames": ["react-router"]
+    },
+    {
+      "groupName": "ESLint families",
+      "matchPackageNames": ["eslint", "typescript-eslint", "globals"],
+      "matchPackagePatterns": ["^eslint", "^@eslint"]
+    },
+    {
+      "groupName": "StyleLint families",
+      "matchPackagePatterns": ["^stylelint"]
+    },
+    {
+      "groupName": "Formatter families",
+      "matchPackageNames": ["prettier"]
+    },
+    {
+      "groupName": "Test families",
+      "matchPackageNames": ["vitest", "jsdom"]
+    },
+    {
+      "groupName": "Test Utility families",
+      "matchPackagePatterns": ["^@testing-library"]
+    },
+    {
+      "groupName": "Storybook families",
+      "matchPackageNames": ["storybook"],
+      "matchPackagePatterns": ["^@storybook"]
+    },
+    {
+      "groupName": "Builder families",
+      "matchPackageNames": ["vite", "@vitejs/plugin-react-swc"]
+    }
+  ]
+}
