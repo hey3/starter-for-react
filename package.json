@@ -45,8 +45,8 @@
     "typecheck": "tsc --project tsconfig.json --pretty --noEmit --incremental false"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
     "react-router": "7.14.1"
   },
   "devDependencies": {
@@ -59,8 +59,8 @@
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.3.0",
     "@testing-library/user-event": "14.6.1",
-    "@types/react": "19.1.8",
-    "@types/react-dom": "19.1.6",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react-swc": "3.9.0",
     "eslint": "9.39.4",
     "eslint-config-prettier": "10.1.5",
